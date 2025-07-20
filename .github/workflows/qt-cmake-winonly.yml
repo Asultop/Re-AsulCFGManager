@@ -49,7 +49,7 @@ jobs:
       
       run: |
         mkdir dist
-        set "PRODUCT_NAME=AsulCFGManager"
+        set "PRODUCT_NAME=Re-AsulCFGManager"
         
         copy build\%PRODUCT_NAME%.exe dist\
         copy build\ElaWidgetTools.dll dist\
