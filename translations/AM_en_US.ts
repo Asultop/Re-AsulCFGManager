@@ -241,6 +241,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="32"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="212"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <source>Find in text</source>
         <translation>Find in text</translation>
@@ -248,6 +249,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="39"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="213"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <source>Replace with</source>
         <translation>Replace with</translation>
@@ -255,6 +257,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="53"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="214"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <source>Find:</source>
         <translation>Find:</translation>
@@ -262,6 +265,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="63"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="216"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <source>Search backward</source>
         <translation>Search backward</translation>
@@ -269,6 +273,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="80"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="219"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <source>Replace:</source>
         <translation>Replace:</translation>
@@ -276,6 +281,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="90"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="221"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <source>Close search</source>
         <translation>Close search</translation>
@@ -283,6 +289,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="107"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="225"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <source>Advanced search / replace text</source>
         <translation>Advanced search / replace text</translation>
@@ -290,6 +297,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="127"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="229"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <source>Search forward</source>
         <translation type="unfinished"></translation>
@@ -297,6 +305,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="144"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="233"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <source>Match case sensitive</source>
         <translation type="unfinished"></translation>
@@ -304,6 +313,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="164"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="236"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <source>Mode:</source>
         <translation type="unfinished"></translation>
@@ -311,6 +321,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="193"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="237"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <source>Plain text</source>
         <translation type="unfinished"></translation>
@@ -318,6 +329,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="198"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="238"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <source>Whole words</source>
         <translation type="unfinished"></translation>
@@ -325,6 +337,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="203"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="239"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <source>Regular expression</source>
         <translation type="unfinished"></translation>
@@ -332,6 +345,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="224"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="242"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <source>Replace one text occurrence</source>
         <translation type="unfinished"></translation>
@@ -339,6 +353,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="227"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="244"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <source>Replace</source>
         <translation type="unfinished"></translation>
@@ -346,6 +361,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="237"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="246"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <source>Replace all text occurrences</source>
         <translation type="unfinished"></translation>
@@ -353,6 +369,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="240"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="248"/>
+        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <source>Replace all</source>
         <translation type="unfinished"></translation>
@@ -454,9 +471,13 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">Construction Date: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_About.cpp" line="43"/>
         <source>MIT 授权协议</source>
-        <translation>MIT Authorization Agreement</translation>
+        <translation type="vanished">MIT Authorization Agreement</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_About.cpp" line="43"/>
+        <source>GPLV3 授权协议</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../Sources/T_About.cpp" line="48"/>

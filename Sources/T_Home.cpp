@@ -29,12 +29,12 @@ T_Home::T_Home(QWidget *parent)
     urlCard1->setTitlePixelSize(17);
     urlCard1->setTitleSpacing(25);
     urlCard1->setSubTitleSpacing(13);
-    urlCard1->setUrl("https://github.com/AsulTop/AsulCFGManager");
+    urlCard1->setUrl("https://github.com/AsulTop/Re-AsulCFGManager");
     urlCard1->setCardPixmap(QPixmap(":/pic/Pic/github.png"));
     urlCard1->setTitle("Asul Github");
     urlCard1->setSubTitle("使用ElaWidgetTools\nUI框架开发的CS2 CFG管理工具");
     ElaToolTip* urlCard1ToolTip = new ElaToolTip(urlCard1);
-    urlCard1ToolTip->setToolTip("https://github.com/AsulTop/AsulCFGManager");
+    urlCard1ToolTip->setToolTip("https://github.com/AsulTop/Re-AsulCFGManager");
     flowLayout->addWidget(urlCard1);
 
     ElaAcrylicUrlCard* urlCard2 = new ElaAcrylicUrlCard(this);

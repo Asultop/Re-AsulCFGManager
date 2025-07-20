@@ -47,7 +47,7 @@ Asul::Asul(QWidget *parent)
         // ElaLog::getInstance()->setLogSavePath(QApplication::applicationDirPath());
         // ElaLog::getInstance()->setLogFileName("AsulCFGManager");
         Logger& logger= Logger::instance();
-        const QString sLogPath(QDir(QCoreApplication::applicationDirPath()).filePath("AsulCFGManager_log.txt"));
+        const QString sLogPath(QDir(QCoreApplication::applicationDirPath()).filePath("Re-AsulCFGManager_log.txt"));
         DestinationPtr fileDestination(DestinationFactory::MakeFileDestination(
             sLogPath, EnableLogRotation, MaxSizeBytes(512*1024), MaxOldLogCount(5)));
         DestinationPtr debugDestination(DestinationFactory::MakeDebugOutputDestination());
@@ -106,7 +106,7 @@ Asul::Asul(QWidget *parent)
     this->setUserInfoCardTitle("CFG LinkWard");
     this->setUserInfoCardSubTitle("by Alivn@Asul.top");
     this->setUserInfoCardVisible(true);
-    this->setWindowTitle("AsulCFGManager");
+    this->setWindowTitle("Re-AsulCFGManager");
     this->setWindowButtonFlag(ElaAppBarType::StayTopButtonHint,false);
     this->setIsDefaultClosed(false);
     this->setAcceptDrops(true);

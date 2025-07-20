@@ -92,7 +92,7 @@ void BaseScrollPage::createCustomWidget(QString desText)
     // 顶部元素
     QWidget* customWidget = new QWidget(this);
     ElaText* subTitleText = new ElaText(this);
-    subTitleText->setText("AsulCFGManager @ Asul.top");
+    subTitleText->setText("Re-AsulCFGManager @ Asul.top");
     subTitleText->setTextInteractionFlags(Qt::TextSelectableByMouse);
     subTitleText->setTextPixelSize(11);
 
