@@ -11,7 +11,7 @@ add_definitions(
 )
 
 # 查找Qt组件
-find_package(Qt6 COMPONENTS Core Gui Network Widgets Core5Compat LinguistTools REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Network Widgets LinguistTools REQUIRED)
 if(Qt6_FOUND)
     set(QT_LIBRARIES Qt6::Core Qt6::Gui Qt6::Network Qt6::Widgets )
 else()
