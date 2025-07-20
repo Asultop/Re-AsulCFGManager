@@ -140,7 +140,7 @@ qt_add_resources(RESOURCE_FILES ${RESOURCES})
 
 qt6_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 
-add_executable(${PROJECT_NAME}
+add_executable(${PROJECT_NAME} WIN32
     ${SOURCES}
     ${HEADERS}
     ${RESOURCE_FILES}
