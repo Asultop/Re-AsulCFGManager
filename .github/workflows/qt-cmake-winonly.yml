@@ -57,9 +57,18 @@ jobs:
         copy build\%PRODUCT_NAME%.exe dist\
         copy build\ElaWidgetTools.dll dist\
         windeployqt dist\%PRODUCT_NAME%.exe
-    - name: Upload artifacts
+        
+        mkdir dist_exe
+        copy build\%PRODUCT_NAME%.exe dist_exe\
+    - name: Upload artifacts (Zip)
       uses: actions/upload-artifact@v4
       with:
         name: windows-build
         path: dist/
         retention-days: 7
+    - name: Upload exe only artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-exe-only
+        path: dist_exe/
+        retention-days: 30
