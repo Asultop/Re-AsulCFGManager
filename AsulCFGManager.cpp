@@ -113,7 +113,7 @@ Asul::Asul(QWidget *parent)
     this->update();
     this->setNavigationBarDisplayMode(ElaNavigationType::Compact);
 
-
+    this->setFixedSize(QSize(1150,700));
 
     gLocation=new QTemporaryDir();
     GlobalLocation=gLocation->path();
