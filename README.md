@@ -54,7 +54,9 @@ cd ElaWidgetTool
 4. 将编译获得的 `elawidgettools.dll` 放入父目录 `../dll`
 6. 返回到父目录：
    ```bash
-   cd ..
+   mkdir build
+   cd build
+   cmake .. -G "MinGW Makefiles" -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=Release
    ```
 7. 使用 Qt Creator 打开 `FluentCSRM.pro` 文件，配置编译选项。
 8. 或者通过命令行构建：
