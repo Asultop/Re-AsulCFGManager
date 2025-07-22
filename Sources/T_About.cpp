@@ -32,7 +32,7 @@ T_About::T_About (QWidget* parent)
     });
 
     // 版本信息
-    ElaText* versionText = new ElaText ("Re-AsulCFGManager [V1.0.1]", this);
+    ElaText* versionText = new ElaText ("AsulCFGManager [V1.0.1]", this);
     QFont versionTextFont = versionText->font ();
     versionTextFont.setWeight (QFont::Bold);
     versionText->setFont (versionTextFont);
@@ -40,7 +40,7 @@ T_About::T_About (QWidget* parent)
     versionText->setTextPixelSize (22); // 增大字体尺寸
 
     // 授权信息
-    ElaText* licenseText = new ElaText (tr ("GPLV3 授权协议"), this);
+    ElaText* licenseText = new ElaText (tr ("MIT 授权协议"), this);
     licenseText->setWordWrap (false);
     licenseText->setTextPixelSize (16);
 

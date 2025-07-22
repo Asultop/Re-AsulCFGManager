@@ -243,6 +243,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <source>Find in text</source>
         <translation>查找</translation>
     </message>
@@ -251,6 +252,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <source>Replace with</source>
         <translation>替换</translation>
     </message>
@@ -259,6 +261,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <source>Find:</source>
         <translation>寻找：</translation>
     </message>
@@ -267,6 +270,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <source>Search backward</source>
         <translation type="unfinished"></translation>
     </message>
@@ -275,6 +279,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <source>Replace:</source>
         <translation>替换：</translation>
     </message>
@@ -283,6 +288,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <source>Close search</source>
         <translation>关闭寻找</translation>
     </message>
@@ -291,6 +297,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <source>Advanced search / replace text</source>
         <translation>高级查找 / 替换文本</translation>
     </message>
@@ -299,6 +306,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <source>Search forward</source>
         <translation type="unfinished"></translation>
     </message>
@@ -307,6 +315,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <source>Match case sensitive</source>
         <translation type="unfinished"></translation>
     </message>
@@ -315,6 +324,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <source>Mode:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -323,6 +333,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <source>Plain text</source>
         <translation type="unfinished"></translation>
     </message>
@@ -331,6 +342,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <source>Whole words</source>
         <translation type="unfinished"></translation>
     </message>
@@ -339,6 +351,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <source>Regular expression</source>
         <translation type="unfinished"></translation>
     </message>
@@ -347,6 +360,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <source>Replace one text occurrence</source>
         <translation type="unfinished"></translation>
     </message>
@@ -355,6 +369,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <source>Replace</source>
         <translation type="unfinished"></translation>
     </message>
@@ -363,6 +378,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <source>Replace all text occurrences</source>
         <translation type="unfinished"></translation>
     </message>
@@ -371,6 +387,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
+        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <source>Replace all</source>
         <translation type="unfinished"></translation>
     </message>
@@ -472,7 +489,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_About.cpp" line="43"/>
-        <source>GPLV3 授权协议</source>
+        <source>MIT 授权协议</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1100,70 +1117,80 @@ There are inherent dangers in the use of any software, and you are solely respon
 <context>
     <name>T_Manage</name>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="15"/>
-        <location filename="../Sources/T_Manage.cpp" line="57"/>
+        <location filename="../Sources/T_Manage.cpp" line="16"/>
+        <location filename="../Sources/T_Manage.cpp" line="58"/>
         <source>管理</source>
         <translation>管理</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="15"/>
+        <location filename="../Sources/T_Manage.cpp" line="16"/>
         <source>开关已安装的 CFG</source>
         <translation>开关已安装的 CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="17"/>
+        <location filename="../Sources/T_Manage.cpp" line="18"/>
         <source>请重启面板同意我们阅读 AutoExec.CFG 来管理</source>
         <translation>请重启面板同意我们阅读 AutoExec.CFG 来管理</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="45"/>
-        <location filename="../Sources/T_Manage.cpp" line="51"/>
-        <location filename="../Sources/T_Manage.cpp" line="152"/>
+        <location filename="../Sources/T_Manage.cpp" line="46"/>
+        <location filename="../Sources/T_Manage.cpp" line="52"/>
+        <location filename="../Sources/T_Manage.cpp" line="154"/>
         <source>文件</source>
         <translation>文件</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="45"/>
+        <location filename="../Sources/T_Manage.cpp" line="46"/>
         <source>AutoExec.cfg 已被外部修改！请重启面板管理</source>
         <translation>AutoExec.cfg 已被外部修改！请重启面板管理</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="51"/>
+        <location filename="../Sources/T_Manage.cpp" line="52"/>
         <source>无法监视 AutoExec.cfg 的变化</source>
         <translation>无法监视 AutoExec.cfg 的变化</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="57"/>
+        <location filename="../Sources/T_Manage.cpp" line="58"/>
         <source>AutoExec文件无法打开</source>
         <translation>AutoExec文件无法打开</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="60"/>
+        <location filename="../Sources/T_Manage.cpp" line="61"/>
         <source>未找到存在的 AutoExec 文件</source>
         <translation>未找到存在的 AutoExec 文件</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="123"/>
+        <location filename="../Sources/T_Manage.cpp" line="124"/>
         <source>删除</source>
         <translation>删除</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="130"/>
+        <location filename="../Sources/T_Manage.cpp" line="131"/>
         <source>: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="193"/>
+        <location filename="../Sources/T_Manage.cpp" line="172"/>
+        <source>[名称:%1,版本:%2,作者:%3]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Manage.cpp" line="173"/>
+        <source>[未找到配置文件]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Manage.cpp" line="212"/>
         <source>条目</source>
         <translation>条目</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="193"/>
+        <location filename="../Sources/T_Manage.cpp" line="212"/>
         <source>删除后将导致这个 CFG 需要重新启用且无法在此面板中开关</source>
         <translation>删除后将导致这个 CFG 需要重新启用且无法在此面板中开关</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="218"/>
+        <location filename="../Sources/T_Manage.cpp" line="237"/>
         <source>打开 AutoExec.cfg 文件</source>
         <translation>打开 AutoExec.cfg 文件</translation>
     </message>
@@ -1172,17 +1199,17 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">AutoEXEC 文件不存在！</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="68"/>
+        <location filename="../Sources/T_Manage.cpp" line="69"/>
         <source>预览 AutoExec.cfg 文件</source>
         <translation>预览 AutoExec.cfg 文件</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="100"/>
+        <location filename="../Sources/T_Manage.cpp" line="101"/>
         <source>成功</source>
         <translation>成功</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="100"/>
+        <location filename="../Sources/T_Manage.cpp" line="101"/>
         <source>保存至AutoExec.cfg</source>
         <translation>保存至AutoExec.cfg</translation>
     </message>
@@ -1191,14 +1218,13 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">开启 %1</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="152"/>
+        <location filename="../Sources/T_Manage.cpp" line="154"/>
         <source>/config.asuls 打开失败</source>
         <translation>/config.asuls 打开失败</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Manage.cpp" line="169"/>
         <source> [名称:%1,版本:%2,作者:%3]</source>
-        <translation> [名称:%1,版本:%2,作者:%3]</translation>
+        <translation type="vanished"> [名称:%1,版本:%2,作者:%3]</translation>
     </message>
 </context>
 <context>

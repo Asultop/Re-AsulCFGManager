@@ -6,6 +6,7 @@
 #include <ElaMessageBar.h>
 #include <QFileSystemWatcher>
 #include <ElaListView.h>
+#include <qboxlayout.h>
 #include "../3rd/QsLog/QsLog.h"
 using namespace QsLogging;
 // #define parentWindow dynamic_cast<Asul *>(this->parent())
@@ -128,6 +129,7 @@ T_Manage::T_Manage(QWidget *parent,bool readPolicy)
                 funcSwitch->setIsToggled(line.startsWith("exec"));
                 QString pureArgu=line.replace("//exec","exec");
                 ElaText *funcText=new ElaText(QString(tr(": %1")).arg(funcName),this);
+                ElaText *detailText=new ElaText(this);
                 funcText->setTextPixelSize(20);
                 funcText->setProperty("num",col);
                 connect(funcSwitch,&ElaToggleSwitch::toggled,[=](bool toggle){
@@ -166,8 +168,10 @@ T_Manage::T_Manage(QWidget *parent,bool readPolicy)
                         }
                         // CFGDetails = info[4];
                     }
-                    funcText->setText(funcText->text()+QString(tr(" [名称:%1,版本:%2,作者:%3]")).arg(CFGName).arg(CFGVersion).arg(CFGAuthor));
-                }
+                    funcText->setText("exec "+funcText->text());
+                    detailText->setText(QString(tr("[名称:%1,版本:%2,作者:%3]")).arg(CFGName).arg(CFGVersion).arg(CFGAuthor));
+                }else detailText->setText(tr("[未找到配置文件]"));
+                
                 ElaText *imageCard = new ElaText(this);
                 imageCard->setAutoFillBackground(true);
                 imageCard->setFixedSize(QSize(50,50));
@@ -181,8 +185,23 @@ T_Manage::T_Manage(QWidget *parent,bool readPolicy)
 
                 imageCard->setPixmap(simg);
                 QHBoxLayout *titleLayout=new QHBoxLayout();
+                
                 titleLayout->addWidget(imageCard);
-                titleLayout->addWidget(funcText);
+
+                QVBoxLayout *detailLayout=new QVBoxLayout();
+                detailLayout->setContentsMargins(15,10,0,10);
+                QFont font(funcText->font());
+                font.setBold(true);
+                font.setPixelSize(14);
+                QFont detailFont(detailText->font());
+                detailFont.setPixelSize(12);
+                funcText->setFont(font);
+                detailText->setFont(detailFont);
+                detailLayout->addWidget(funcText);
+                detailLayout->addWidget(detailText);
+
+                titleLayout->addLayout(detailLayout);
+                
                 QHBoxLayout *funcLayout1=new QHBoxLayout();
                 funcLayout1->addWidget(deleteButton);
                 funcLayout1->addWidget(funcSwitch);

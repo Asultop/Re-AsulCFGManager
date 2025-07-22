@@ -61,7 +61,7 @@ T_Home2::T_Home2(QWidget* parent)
     urlCard1->setTitle("Asul Github");
     urlCard1->setSubTitle(tr("GitHub"));
     ElaToolTip* urlCard1ToolTip = new ElaToolTip(urlCard1);
-    urlCard1ToolTip->setToolTip("https://github.com/AsulTop/Re-AsulCFGManager");
+    urlCard1ToolTip->setToolTip("https://github.com/AsulTop/AsulCFGManager");
     ElaAcrylicUrlCard* urlCard2 = new ElaAcrylicUrlCard(this);
     urlCard2->setCardPixmapSize(QSize(62, 62));
     urlCard2->setFixedSize(195, 225);
@@ -108,7 +108,7 @@ T_Home2::T_Home2(QWidget* parent)
     // ElaFlowLayout
     ElaPopularCard* homeCard = new ElaPopularCard(this);
     connect(homeCard, &ElaPopularCard::popularCardButtonClicked, this, [=]() {
-        QDesktopServices::openUrl(QUrl("https://github.com/AsulTop/Re-AsulCFGManager"));
+        QDesktopServices::openUrl(QUrl("https://github.com/AsulTop/AsulCFGManager"));
     });
     QPixmap pngLo(QPixmap(QString(":/pic/Pic/favicon.png").replace("favicon.png",eTheme->getThemeMode()==ElaThemeType::Light?"favicon_dark.png":"favicon.png")));
     homeCard->setCardPixmap(pngLo);
