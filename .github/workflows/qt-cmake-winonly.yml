@@ -3,6 +3,9 @@ name: Qt CMake Build (Platform Win Only)
 on:
   push:
     branches: [ main ]
+    paths-ignore:  
+      - 'LICENSE'
+      - 'Readme.md'
   pull_request:
     branches: [ main ]
   workflow_dispatch:
