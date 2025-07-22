@@ -60,15 +60,23 @@ jobs:
         
         mkdir dist_exe
         copy build\%PRODUCT_NAME%.exe dist_exe\
-    - name: Upload artifacts (Zip)
+        mkdir dist_dll
+        copy build\ElaWidgetTools.dll dist_dll\
+    - name: Upload artifacts (ZIP)
       uses: actions/upload-artifact@v4
       with:
         name: windows-build
         path: dist/
         retention-days: 7
-    - name: Upload exe only artifacts
+    - name: Upload artifacts (EXE)
       uses: actions/upload-artifact@v4
       with:
         name: windows-exe-only
         path: dist_exe/
         retention-days: 30
+    - name: Upload artifacts (DLL)
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-dll
+        path: dist_dll/
+        retention-days: 30    
