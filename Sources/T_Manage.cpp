@@ -209,7 +209,7 @@ T_Manage::T_Manage(QWidget *parent,bool readPolicy)
                 deleteButton->setMaximumWidth(funcSwitch->width()*2);
                 ElaScrollPageArea *funcArea=(GenerateArea(this,titleLayout,funcLayout1,false));
                 connect(deleteButton,&ElaPushButton::clicked,[=](){
-                    bool ret=askDialog(tr("条目"),"**"+tr("删除后将导致这个 CFG 需要重新启用且无法在此面板中开关")+"**");
+                    bool ret=askDialog(tr("条目"),"**"+tr("删除后将导致这个 CFG 无法在此面板中开关")+"**");
                     if(ret){
                         funcArea->hide();
                         sumAutoExec->setValue(funcText->property("num").toInt(),"");

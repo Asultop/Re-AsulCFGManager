@@ -14,6 +14,8 @@
 #include "ElaPopularCard.h"
 #include "../Headers/W_DragFrame.h"
 #include "../Headers/F_Translator.h"
+#include "../Headers/F_SteamUserQuery.h"
+
 class T_Deploy : public BaseScrollPage
 {
     Q_OBJECT
@@ -58,8 +60,9 @@ private:
                                   ElaFlowLayout *cVLayout);
     void createDirectories(const QString &path);
     void resetToDefault();
-
-    // QMap<QString,QVariant> *data;
+    void uninstallCFG(QString location);
+    void closeCFG();
+        // QMap<QString,QVariant> *data;
 
 
 signals:

@@ -31,7 +31,7 @@ using namespace QsLogging;
 T_Deploy::T_Deploy(QWidget *parent)
     : BaseScrollPage{parent}
 {
-    initWidget("",tr("安装"),tr("选择符合格式的安装包")+"\n"+tr("我们会为您解析数据并自动安装到您的CFG目录下"));
+    initWidget("",tr("安装"),tr("选择符合格式的安装包")+"\n"+tr("我们会为您解析数据并自动安装到您的CFG目录下")+"\n"+tr("[鼠标悬浮] : 展开界面点击管理或部署")+"\n"+tr("[鼠标单击] : 提示删除"));
 
     steamPath=gSettings->getSteamPath();
     perfectPath=gSettings->getPerfectPath();
@@ -641,11 +641,18 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
     }
     CFGBreifInfo->setTitle(CFGName);
     CFGBreifInfo->setSubTitle("@" + CFGAuthor);
-    CFGBreifInfo->setInteractiveTips(tr("队列中"));
+    CFGBreifInfo->setCardButtontext(tr("部署"));
+    CFGBreifInfo->setInteractiveTips(tr(" 队列中 - 等待点击部署"));
 
     if(ExistDir.contains(CFGFileLocation)){
         CFGBreifInfo->setCardButtontext(tr("管理"));
         CFGBreifInfo->setInteractiveTips(tr("已安装"));
+        connect(CFGBreifInfo,&ElaPopularCard::popularCardClicked,[=](){
+            if(this->askDialog(this,tr("删除"),tr("是否要删除此CFG,这会永久删除 (真的很久!)"))){
+                uninstallCFG(CFGFileLocation);
+                CFGBreifInfo->hide();
+            }
+        });
     }
     CFGBreifInfo->setDetailedText(tr("版本:")+CFGVersion+"\n"+CFGDetails);
     CFGBreifInfo->setCardFloatPixmap(QPixmap(QString(":/pic/Pic/favicon.png").replace("favicon.png",eTheme->getThemeMode()==ElaThemeType::Light?"favicon_dark.png":"favicon.png")));
@@ -761,7 +768,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                     }else{
                         QLOG_DEBUG()<<"[DEBUGABLE_INFORMATION] Parsing "<<line<<" : char["+QString::number(i)+"]";
                         QLOG_DEBUG()<<"[KEY|MUST] Missing Arguments";
-                        emit generateError(tr("在 ")+asulFile+tr(" 中")+QString::number(i)+tr("[key] 无法找到完整参数"));
+                        emit generateError(tr("在 ")+asulFile+tr(" 中 ")+QString::number(i)+tr(" [key] 无法找到完整参数"));
                         showable=false;
                         return;
                     }
@@ -771,7 +778,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 QString func=result[2];
                 QString title=result[3];
                 QString details=result[4];
-                DBG(type);DBG(defaultKey);DBG(func);DBG(title);DBG(details);
+                // DBG(type);DBG(defaultKey);DBG(func);DBG(title);DBG(details);
                 arguPure=type+" \"%1\""+" \""+func+"\" \""+title+"\" \""+details+"\"";
                 // QLOG_DEBUG()<<"arguPure"<<arguPure;
                 //addButtonToDeployWindow
@@ -814,7 +821,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 detailText->setProperty("num",colNum);
                 connect(configKeyLine,&ElaLineEdit::textChanged,[=](QString val){
                     configKeyBinder->setBinderKeyText(val);
-                    QLOG_DEBUG()<<"get in configKeyLine";
+                    // QLOG_DEBUG()<<"get in configKeyLine";
                     if(val=="Up") val="uparrow";
                     else if(val=="Down") val="downarrow";
                     else if(val=="Left") val="leftarrow";
@@ -829,7 +836,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
 
                 });
                 connect(configKeyBinder,&ElaKeyBinder::binderKeyTextChanged,this,[=](QString val){
-                    QLOG_DEBUG()<<"get in binderKeyTextChanged";
+                    // QLOG_DEBUG()<<"get in binderKeyTextChanged";
                     if(val=="Up") val="uparrow";
                     else if(val=="Down") val="downarrow";
                     else if(val=="Left") val="leftarrow";
@@ -869,7 +876,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                     else{
                         QLOG_DEBUG()<<"[DEBUGABLE_INFORMATION] Parsing "<<line<<" : char["+QString::number(i)+"]";
                         QLOG_DEBUG()<<"[FUNC] Missing Arguments";
-                        emit generateError("在 "+asulFile+" 中"+QString::number(i)+":func无法找到完整参数");
+                        emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :func无法找到完整参数");
                         showable=false;
                         return;
                     }
@@ -882,7 +889,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 QString title = result[1];
                 QString details = result[2];
                 QString defaultSwitch = result[3];
-                DBG(title);DBG(details);DBG(defaultSwitch);
+                // DBG(title);DBG(details);DBG(defaultSwitch);
                 int switchNums=result[4].toInt();
                 arguPure=result[0]+" \""+title+"\" \""+details+"\" \"%1\" "+QString::number(switchNums);
                 QStringList switchContent,switchDetail;
@@ -952,12 +959,12 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
             }
             else if(line.startsWith("text")){
                 QLOG_DEBUG()<<"[TEXT] Part Parsing";
-                DBG(line);
+                // DBG(line);
                 arguPure=line;
                 QRegularExpressionMatch match = regex2.match(line);
                 if(match.hasMatch()) {
                     QString quotedContent = match.captured(1);  // 获取第一个捕获组(引号内的内容)
-                    ElaText *tplat=new ElaText(quotedContent);
+                    ElaText *tplat=new ElaText(quotedContent,this);
                     tplat->hide();
                     sumContent->addLabel(tplat);
                     sumAsul->setValue(sumAsul->addLabel(tplat),line);
@@ -965,7 +972,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 }else{
                     QLOG_DEBUG()<<"[DEBUGABLE_INFORMATION] Parsing "<<line<<" : char["+QString::number(i)+"]";
                     QLOG_DEBUG()<<"[TEXT] Missing Arguments";
-                    emit generateError("在 "+asulFile+" 中"+QString::number(i)+":text无法找到完整参数");
+                    emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :text无法找到完整参数");
                     showable=false;
                     return;
                 }
@@ -984,11 +991,11 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                     A = match.captured(3);       // 第三个引号中的内容 (如 A)
                     B = match.captured(4);       // 第四个引号中的内容 (如 B)
 
-                    QLOG_DEBUG() << "标题:" << title << "详情:" << detail << "A:" << A << "B:" << B;
+                    // QLOG_DEBUG() << "标题:" << title << "详情:" << detail << "A:" << A << "B:" << B;
                 }else{
                     QLOG_DEBUG()<<"[DEBUGABLE_INFORMATION] Parsing "<<line<<" : char["+QString::number(i)+"]";
                     QLOG_DEBUG()<<"[LINE] Missing Arguments";
-                    emit generateError("在 "+asulFile+" 中"+QString::number(i)+":line无法找到完整参数");
+                    emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :line无法找到完整参数");
                     showable=false;
                     return;
                 }
@@ -1028,6 +1035,31 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
 
                 Allkey->addWidget(configArea);
                 Allkey->addSpacing(5);
+            }
+            else if(line.startsWith("title")){
+                QLOG_DEBUG()<<"[Title] Part Parsing";
+                // DBG(line);
+                arguPure=line;
+                QRegularExpressionMatch match = regex2.match(line);
+                if(match.hasMatch()) {
+                    QString quotedContent = match.captured(1);  // 获取第一个捕获组(引号内的内容)
+                    ElaText *tplat=new ElaText(quotedContent,this);
+                    // tplat->hide();
+                    tplat->setTextPixelSize(24);
+                    QFont tpFont=tplat->font();
+                    tpFont.setBold(true);
+                    tplat->setFont(tpFont);
+                    int com=sumContent->addLabel(tplat);
+                    sumContent->setValue(com,"//"+line);
+                    sumAsul->setValue(com,line);
+                    Allkey->addWidget(tplat);
+                }else{
+                    QLOG_DEBUG()<<"[DEBUGABLE_INFORMATION] Parsing "<<line<<" : char["+QString::number(i)+"]";
+                    QLOG_DEBUG()<<"[TITLE] Missing Arguments";
+                    emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :title无法找到完整参数");
+                    showable=false;
+                    return;
+                }
             }
         }
 
@@ -1111,8 +1143,8 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 DBG(CFGFileName);DBG(CFGFileLocation);DBG(CFGDirName);DBG(CFGPath);DBG(AsulFileName);DBG(asulFile);
                 QLOG_DEBUG()<<"[Deploy] write to "<<CFGFileLocation+"/"+AsulFileName+".asul";
 
-                QFile *preferrenceFile=new QFile(CFGFileLocation+"/"+CFGFileName);
-                QFile *asulFi=new QFile(CFGFileLocation+"/"+AsulFileName+".asul");
+                QFile *preferrenceFile=new QFile(QString(CFGFileLocation+"/"+CFGFileName).replace(".cfg.cfg",".cfg")); //wtf ? this bug is no longer destory this app!
+                QFile *asulFi=new QFile(QString(CFGFileLocation+"/"+AsulFileName+".asul").replace(".asul.asul",".asul")); //wtf ? this bug is no longer destory this app!
                 if(asulFi->exists()){
                     if (!asulFi->remove()) {
                         qWarning() << "[Deploy] Can't delete file:" << asulFi->fileName();
@@ -1385,6 +1417,195 @@ void T_Deploy::createDirectories(const QString &path) {
         QString currentPath = pathParts.mid(0, i + 1).join('/');
         if (!dir.exists(currentPath)) {
             dir.mkpath(currentPath);
+        }
+    }
+}
+
+void T_Deploy::uninstallCFG(QString location){
+    QString userConf=gSettings->getSteamConfPath()+"/loginusers.vdf";
+    QList<SteamUserInfo> allUsers = F_SteamUserQuery::parseUsersFile(userConf);
+    QString userMachieLocation = R"(%STEAM_USERPATH%%STEAM_SHORTID%/730/local/cfg/cs2_machine_convars.vcfg)";
+    QString userFileLocation = R"(%STEAM_USERPATH%%STEAM_SHORTID%/730/local/cfg/cs2_user_keys_0_slot0.vcfg)";
+    userFileLocation.replace("%STEAM_USERPATH%",gSettings->getSteamUserPath());
+    userMachieLocation.replace("%STEAM_USERPATH%",gSettings->getSteamUserPath());
+    QString userName;
+    for(const auto& node:allUsers){
+        if(node.mostRecent){
+            userFileLocation.replace("%STEAM_SHORTID%",node.userShortId);
+            userMachieLocation.replace("%STEAM_SHORTID%",node.userShortId);
+            userName=node.personaName;
+        }
+    }
+
+    if(askDialog(this,tr("注意"),tr("这会重置 ")+userName+tr("(**最近登陆**) 的所有按键绑定设置! "))){
+        QFile cs2_user_keys_0_slot0(userFileLocation);
+        if (!cs2_user_keys_0_slot0.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            qDebug() << "无法打开文件：" << cs2_user_keys_0_slot0.errorString();
+            return;
+        }
+        QTextStream out(&cs2_user_keys_0_slot0);
+        out <<
+R"("config"
+{
+
+})";
+        cs2_user_keys_0_slot0.close();
+        //Modify the tab->click release mouse event:
+        try{
+            std::ifstream file(userMachieLocation.toStdString());
+
+            if (!file.is_open()) {
+                DBG(tr("无法打开文件: ")+userMachieLocation);
+                return;
+            }
+
+            tyti::vdf::Options options;
+            tyti::vdf::object root;
+            bool parse_ok;
+
+            try {
+                root = tyti::vdf::read(file, &parse_ok, options);
+            } catch (const std::exception& e) {
+                DBG(tr("解析失败: ")+e.what());
+                return;
+            }
+
+            if (!parse_ok) {
+                DBG(tr("[内部错误] VDF 格式错误!"));
+                return;
+            }
+
+            // 查找convars节点
+            auto convars_it = root.childs.find("convars");
+            if (convars_it == root.childs.end() || !convars_it->second) {
+                DBG(tr("[内部错误] convar 节点丢失"));
+                return;
+            }
+
+            auto& convars_node = *convars_it->second;
+
+
+            // 修改属性值
+            std::string oldValue = convars_node.attribs["cl_scoreboard_mouse_enable_binding"];
+            convars_node.attribs["cl_scoreboard_mouse_enable_binding"] = "+attack2";
+
+            // 保存修改到文件
+            // 注意：为了安全，先保存到备份文件，确认无误后再替换原文件
+            auto writeVdfToFile=[](const std::string& filePath, const tyti::vdf::object& root) {
+                std::ofstream file(filePath);
+                if (!file.is_open()) {
+                    DBG(tr("无法打开文件进行写入: ")+QString::fromStdString(filePath)+"\n");
+                    return false;
+                }
+
+                tyti::vdf::Options options;
+                tyti::vdf::write(file, root);
+                return true;
+            };
+
+            if (writeVdfToFile(userMachieLocation.toStdString(), root)) {
+                DBG(tr("操作成功"));
+            }
+        }
+        catch(const std::exception& e){
+            DBG(tr("VDF 操作错误: ")+QString(e.what()));
+            return;
+        }
+
+        //Delete CFG Dir
+        QDir(location).removeRecursively();
+    }
+}
+
+void T_Deploy::closeCFG(){
+    QString userConf=gSettings->getSteamConfPath()+"/loginusers.vdf";
+    QList<SteamUserInfo> allUsers = F_SteamUserQuery::parseUsersFile(userConf);
+    QString userMachieLocation = R"(%STEAM_USERPATH%%STEAM_SHORTID%/730/local/cfg/cs2_machine_convars.vcfg)";
+    QString userFileLocation = R"(%STEAM_USERPATH%%STEAM_SHORTID%/730/local/cfg/cs2_user_keys_0_slot0.vcfg)";
+    userFileLocation.replace("%STEAM_USERPATH%",gSettings->getSteamUserPath());
+    userMachieLocation.replace("%STEAM_USERPATH%",gSettings->getSteamUserPath());
+    QString userName;
+    for(const auto& node:allUsers){
+        if(node.mostRecent){
+            userFileLocation.replace("%STEAM_SHORTID%",node.userShortId);
+            userMachieLocation.replace("%STEAM_SHORTID%",node.userShortId);
+            userName=node.personaName;
+        }
+    }
+
+    if(askDialog(this,tr("注意"),tr("这会重置 ")+userName+tr("(**最近登陆**) 的所有按键绑定设置! "))){
+        QFile cs2_user_keys_0_slot0(userFileLocation);
+        if (!cs2_user_keys_0_slot0.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            qDebug() << "无法打开文件：" << cs2_user_keys_0_slot0.errorString();
+            return;
+        }
+        QTextStream out(&cs2_user_keys_0_slot0);
+        out <<
+            R"("config"
+{
+
+})";
+        cs2_user_keys_0_slot0.close();
+        //Modify the tab->click release mouse event:
+        try{
+            std::ifstream file(userMachieLocation.toStdString());
+
+            if (!file.is_open()) {
+                DBG(tr("无法打开文件: ")+userMachieLocation);
+                return;
+            }
+
+            tyti::vdf::Options options;
+            tyti::vdf::object root;
+            bool parse_ok;
+
+            try {
+                root = tyti::vdf::read(file, &parse_ok, options);
+            } catch (const std::exception& e) {
+                DBG(tr("解析失败: ")+e.what());
+                return;
+            }
+
+            if (!parse_ok) {
+                DBG(tr("[内部错误] VDF 格式错误!"));
+                return;
+            }
+
+            // 查找convars节点
+            auto convars_it = root.childs.find("convars");
+            if (convars_it == root.childs.end() || !convars_it->second) {
+                DBG(tr("[内部错误] convar 节点丢失"));
+                return;
+            }
+
+            auto& convars_node = *convars_it->second;
+
+
+            // 修改属性值
+            std::string oldValue = convars_node.attribs["cl_scoreboard_mouse_enable_binding"];
+            convars_node.attribs["cl_scoreboard_mouse_enable_binding"] = "+attack2";
+
+            // 保存修改到文件
+            // 注意：为了安全，先保存到备份文件，确认无误后再替换原文件
+            auto writeVdfToFile=[](const std::string& filePath, const tyti::vdf::object& root) {
+                std::ofstream file(filePath);
+                if (!file.is_open()) {
+                    DBG(tr("无法打开文件进行写入: ")+QString::fromStdString(filePath)+"\n");
+                    return false;
+                }
+
+                tyti::vdf::Options options;
+                tyti::vdf::write(file, root);
+                return true;
+            };
+
+            if (writeVdfToFile(userMachieLocation.toStdString(), root)) {
+                DBG(tr("操作成功"));
+            }
+        }
+        catch(const std::exception& e){
+            DBG(tr("VDF 操作错误: ")+QString(e.what()));
+            return;
         }
     }
 }

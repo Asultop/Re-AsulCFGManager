@@ -268,7 +268,9 @@ Asul::Asul(QWidget *parent)
                 });
                 errorResult->setCentralWidget(errorWidget);
                 errorResult->exec();
+                return;
             }
+            // deployPage->scanExistProject();
             return;
         }
     });

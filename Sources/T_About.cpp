@@ -17,14 +17,14 @@ T_About::T_About (QWidget* parent)
     // setWindowModality(Qt::ApplicationModal);
     setWindowButtonFlags(ElaAppBarType::CloseButtonHint);
 
-    // 创建内容区域
+
     ElaImageCard* pixCard = new ElaImageCard (this);
-    pixCard->setFixedSize (100, 100); // 增大图标尺寸
+    pixCard->setFixedSize (100, 100);
     pixCard->setIsPreserveAspectCrop (false);
     pixCard->setCardImage (QImage (QString (":/pic/Pic/favicon.png").replace ("favicon.png",
                                                                           eTheme->getThemeMode () == ElaThemeType::Light ? "favicon_dark.png" : "favicon.png")));
 
-    // 主题变化时更新图标
+
     connect (eTheme, &ElaTheme::themeModeChanged, [=]() {
         QString pngLo = QString(":/pic/Pic/favicon.png").replace("favicon.png",
                                                                  eTheme->getThemeMode() == ElaThemeType::Light ? "favicon_dark.png" : "favicon.png");
@@ -32,12 +32,12 @@ T_About::T_About (QWidget* parent)
     });
 
     // 版本信息
-    ElaText* versionText = new ElaText ("AsulCFGManager [V1.0.1]", this);
+    ElaText* versionText = new ElaText ("AsulCFGManager [V1.0.2]", this);
     QFont versionTextFont = versionText->font ();
     versionTextFont.setWeight (QFont::Bold);
     versionText->setFont (versionTextFont);
     versionText->setWordWrap (false);
-    versionText->setTextPixelSize (22); // 增大字体尺寸
+    versionText->setTextPixelSize (22);
 
     // 授权信息
     ElaText* licenseText = new ElaText (tr ("MIT 授权协议"), this);
@@ -56,7 +56,7 @@ T_About::T_About (QWidget* parent)
     authorText->setTextInteractionFlags (Qt::TextSelectableByMouse);
     authorText->setTextPixelSize (16);
 
-    // 交流群信息 - 新建独立 ElaText
+    // 交流群信息
     ElaText* groupText = new ElaText (tr ("交流群: 1025515317 (QQ)"), this);
     groupText->setWordWrap (false);
     groupText->setTextInteractionFlags (Qt::TextSelectableByMouse);
@@ -100,30 +100,29 @@ T_About::T_About (QWidget* parent)
     textLayout->addWidget (licenseText, 0, Qt::AlignCenter);
     textLayout->addWidget (supportText, 0, Qt::AlignCenter);
     textLayout->addWidget (authorText, 0, Qt::AlignCenter);
-    textLayout->addWidget (groupText, 0, Qt::AlignCenter); // 添加独立的交流群文本
+    textLayout->addWidget (groupText, 0, Qt::AlignCenter);
     textLayout->addWidget (helperText, 0, Qt::AlignCenter);
     textLayout->addSpacing (20);
     textLayout->addLayout (payLayout);
     textLayout->addSpacing (20);
     textLayout->addWidget (copyrightText, 0, Qt::AlignCenter);
-    textLayout->addStretch (1); // 添加伸缩项，使内容居上
+    textLayout->addStretch (1);
 
     // 主内容布局
     QHBoxLayout* contentLayout = new QHBoxLayout ();
-    contentLayout->addStretch (1); // 左侧间距
+    contentLayout->addStretch (1);
     contentLayout->addLayout (textLayout);
-    contentLayout->addStretch (1); // 右侧间距
+    contentLayout->addStretch (1);
 
     // 主布局
     QVBoxLayout* mainLayout = new QVBoxLayout (this);
-    mainLayout->setContentsMargins (50, 30, 50, 30); // 增大边距
+    mainLayout->setContentsMargins (50, 30, 50, 30);
     mainLayout->addLayout (contentLayout);
-    mainLayout->addStretch (1); // 底部间距
+    mainLayout->addStretch (1);
 
     // 设置固定大小
     this->setIsFixedSize(true);
     this->setFixedSize (QSize (500, 750));
-    // this->setMinimumSize (QSize (600, 1000));
 }
 
 T_About::~T_About()

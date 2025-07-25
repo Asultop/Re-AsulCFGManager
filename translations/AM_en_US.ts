@@ -131,22 +131,22 @@
         <translation>OK</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="337"/>
+        <location filename="../AsulCFGManager.cpp" line="339"/>
         <source>成功</source>
         <translation>Success</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="337"/>
+        <location filename="../AsulCFGManager.cpp" line="339"/>
         <source>转换器启动中</source>
         <translation>Transformer Starting</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="350"/>
+        <location filename="../AsulCFGManager.cpp" line="352"/>
         <source>关闭</source>
         <translation>Close</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="350"/>
+        <location filename="../AsulCFGManager.cpp" line="352"/>
         <source>确定要关闭此程序?</source>
         <translation>Are you sure to close this program?</translation>
     </message>
@@ -233,7 +233,7 @@ This SOFTWARE PRODUCT is provided by THE PROVIDER &quot;as is&quot; and &quot;wi
 
 There are inherent dangers in the use of any software, and you are solely responsible for determining whether this SOFTWARE PRODUCT is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and THE PROVIDER will not be liable for any damages you may suffer in connection with using, modifying, or distributing this SOFTWARE PRODUCT.
 </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -243,6 +243,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <source>Find in text</source>
         <translation>Find in text</translation>
@@ -252,6 +253,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <source>Replace with</source>
         <translation>Replace with</translation>
@@ -261,6 +263,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <source>Find:</source>
         <translation>Find:</translation>
@@ -270,6 +273,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <source>Search backward</source>
         <translation>Search backward</translation>
@@ -279,6 +283,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <source>Replace:</source>
         <translation>Replace:</translation>
@@ -288,6 +293,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <source>Close search</source>
         <translation>Close search</translation>
@@ -297,6 +303,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <source>Advanced search / replace text</source>
         <translation>Advanced search / replace text</translation>
@@ -306,90 +313,100 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <source>Search forward</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="144"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <source>Match case sensitive</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="164"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <source>Mode:</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="193"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <source>Plain text</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="198"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <source>Whole words</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="203"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <source>Regular expression</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="224"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <source>Replace one text occurrence</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="227"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <source>Replace</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="237"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <source>Replace all text occurrences</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="240"/>
         <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
+        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <source>Replace all</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -397,37 +414,37 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="12"/>
         <source>SteamAvatarFetcher initialized</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="21"/>
         <source>Starting avatar fetch for SteamID: %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="31"/>
         <source>Retry interval set to: %1 ms</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="38"/>
         <source>Max retries set to: %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="38"/>
         <source>unlimited</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="56"/>
         <source>Fetch attempt #%1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="63"/>
         <source>Request timed out (10 seconds)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="69"/>
@@ -436,7 +453,7 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="137"/>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="161"/>
         <source>Scheduling retry in %1 ms</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="71"/>
@@ -445,32 +462,32 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="139"/>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="163"/>
         <source>Max retries reached, giving up</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="90"/>
         <source>Network error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="110"/>
         <source>Invalid JSON response</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="130"/>
         <source>Player information not found</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="154"/>
         <source>Invalid avatar URL received</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/F_SteamAvatarFetcher.cpp" line="169"/>
         <source>Avatar URLs successfully retrieved</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -495,7 +512,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../Sources/T_About.cpp" line="48"/>
         <source>构建日期:</source>
-        <translation>构建日期:</translation>
+        <translation>Build Date:</translation>
     </message>
     <message>
         <location filename="../Sources/T_About.cpp" line="54"/>
@@ -548,12 +565,12 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../Sources/T_CFGSettings.cpp" line="35"/>
         <source>错误</source>
-        <translation type="unfinished">Error</translation>
+        <translation>Error</translation>
     </message>
     <message>
         <location filename="../Sources/T_CFGSettings.cpp" line="35"/>
         <source>steamApi 为空</source>
-        <translation type="unfinished"></translation>
+        <translation>steamApi is empty</translation>
     </message>
     <message>
         <location filename="../Sources/T_CFGSettings.cpp" line="87"/>
@@ -627,6 +644,16 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation>that matches the format. We will parse the data for you and automatically install it in your CFG directory</translation>
     </message>
     <message>
+        <location filename="../Sources/T_Deploy.cpp" line="34"/>
+        <source>[鼠标悬浮] : 展开界面点击管理或部署</source>
+        <translation>[Mouse hovering]: expand the interface and click management or deployment</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="34"/>
+        <source>[鼠标单击] : 提示删除</source>
+        <translation>[Mouse click]: Prompt for deletion</translation>
+    </message>
+    <message>
         <location filename="../Sources/T_Deploy.cpp" line="78"/>
         <source>选择</source>
         <translation>Select</translation>
@@ -663,7 +690,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Deploy.cpp" line="214"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1240"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1272"/>
         <source>文件</source>
         <translation>File</translation>
     </message>
@@ -683,13 +710,13 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Deploy.cpp" line="232"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1213"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1245"/>
         <source>错误</source>
         <translation>Error</translation>
     </message>
     <message>
         <location filename="../Sources/T_Deploy.cpp" line="243"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1095"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1127"/>
         <source>取消</source>
         <translation>Cancel</translation>
     </message>
@@ -779,98 +806,171 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation>Deploy CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="644"/>
-        <source>队列中</source>
-        <translation>In Queue</translation>
+        <location filename="../Sources/T_Deploy.cpp" line="771"/>
+        <source> 中 </source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="647"/>
+        <location filename="../Sources/T_Deploy.cpp" line="771"/>
+        <source> [key] 无法找到完整参数</source>
+        <translation> [key] Unable to find complete parameters</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1440"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1536"/>
+        <source>注意</source>
+        <translation>Attension</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1440"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1536"/>
+        <source>这会重置 </source>
+        <translation>This will reset</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1440"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1536"/>
+        <source>(**最近登陆**) 的所有按键绑定设置! </source>
+        <translation>All key binding settings of (** Recently logged in **)!</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1458"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1554"/>
+        <source>无法打开文件: </source>
+        <translation>Cannot open file: </translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1469"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1565"/>
+        <source>解析失败: </source>
+        <translation>Parsing failed:</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1474"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1570"/>
+        <source>[内部错误] VDF 格式错误!</source>
+        <translation>[Internal error] VDF format error!</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1481"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1577"/>
+        <source>[内部错误] convar 节点丢失</source>
+        <translation>[Internal error] The convar node is missing</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1497"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1593"/>
+        <source>无法打开文件进行写入: </source>
+        <translation>Unable to open file for writing: </translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1507"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1603"/>
+        <source>操作成功</source>
+        <translation>Operation Succeeded</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1511"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1607"/>
+        <source>VDF 操作错误: </source>
+        <translation>VDF operation error:</translation>
+    </message>
+    <message>
+        <source>队列中</source>
+        <translation type="vanished">In Queue</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="648"/>
         <source>管理</source>
         <translation>Manage</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="648"/>
+        <location filename="../Sources/T_Deploy.cpp" line="649"/>
         <source>已安装</source>
         <translation>Installed</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="650"/>
+        <location filename="../Sources/T_Deploy.cpp" line="651"/>
+        <source>删除</source>
+        <translation>Delete</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="651"/>
+        <source>是否要删除此CFG,这会永久删除 (真的很久!)</source>
+        <translation>Do you want to delete this CFG? It will be permanently deleted (really long!)</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="657"/>
         <source>版本:</source>
         <translation>Version:</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="694"/>
+        <location filename="../Sources/T_Deploy.cpp" line="701"/>
         <source>更新</source>
         <translation>Update</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="694"/>
+        <location filename="../Sources/T_Deploy.cpp" line="701"/>
         <source>检测到 CFG 目录下有可覆盖的更新 是否启用?</source>
         <translation>Detected that there are updates in the CFG directory that can be overwritten. Do you want to enable?</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="700"/>
+        <location filename="../Sources/T_Deploy.cpp" line="707"/>
         <source> [升级模式]</source>
         <translation> [Update Mode]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="712"/>
+        <location filename="../Sources/T_Deploy.cpp" line="719"/>
         <source> 项目</source>
         <translation> Program</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="712"/>
+        <location filename="../Sources/T_Deploy.cpp" line="719"/>
         <source>解析完成 </source>
         <translation>Analysis Completed </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="764"/>
+        <location filename="../Sources/T_Deploy.cpp" line="771"/>
         <source>在 </source>
         <translation>at </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="764"/>
         <source>[key] 无法找到完整参数</source>
-        <translation>[key] Unfinished</translation>
+        <translation type="vanished">[key] Unfinished</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="764"/>
-        <source> 中</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../Sources/T_Deploy.cpp" line="781"/>
+        <location filename="../Sources/T_Deploy.cpp" line="788"/>
         <source>(根据作者定义此项无法修改)</source>
         <translation>(Must)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1150"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1182"/>
         <source>// ====== 生成的文件 =======</source>
         <translation>// ====== Generated =======</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1151"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1183"/>
         <source>//=这个 %1 文件由 Asul-CFGManager(AM) 根据配置自动生成 </source>
         <translation>//=This file %1 is automatically generated by Asul CFGManager (AM) based on configuration </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1152"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1184"/>
         <source>
 //==这个 配置文件 从哪儿来的?</source>
         <translation>//==Where did this configuration file come from? </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1156"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1188"/>
         <source>//==CFG 详细 结束</source>
         <translation>//==CFG Detail END</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1162"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1194"/>
         <source>//==参数结束</source>
         <translation>//==Parameter END</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1163"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1195"/>
         <source>//AM 是由 Alivn开发的部署 CS2 CFG 的程序,旨在为CFG制作者提供更方便的分发服务 以及 使用者提供方便的配置服务</source>
         <translation>//AM is a program developed by Alivn for deploying CS2 CFG, aimed at providing more convenient distribution services for CFG creators and convenient configuration services for users</translation>
     </message>
@@ -880,34 +980,40 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">If the keyboard mapping does not have the required keys or does not match the required ones after confirmation \nplease manually enter them in the second blank</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="720"/>
+        <location filename="../Sources/T_Deploy.cpp" line="727"/>
         <source> 配置</source>
         <translation> Conf</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="730"/>
+        <location filename="../Sources/T_Deploy.cpp" line="737"/>
         <source>Asul 文件(</source>
         <translation>Asul File(</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1036"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1037"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1068"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1069"/>
         <source>预览 %1 文件</source>
         <translation>Preview %1 File</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1068"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1261"/>
+        <location filename="../Sources/T_Deploy.cpp" line="644"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1100"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1293"/>
         <source>部署</source>
         <translation>Deploy</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1094"/>
+        <location filename="../Sources/T_Deploy.cpp" line="645"/>
+        <source> 队列中 - 等待点击部署</source>
+        <translation> In queue - waiting for deployment</translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1126"/>
         <source>返回</source>
         <translation>Return</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1096"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1128"/>
         <source>确认</source>
         <translation>Confirm</translation>
     </message>
@@ -928,17 +1034,17 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">\n//==Where did this configuration file come from? \n</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1153"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1185"/>
         <source>//CFG 制作者: </source>
         <translation>//CFG Author: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1154"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1186"/>
         <source>//CFG 名称: </source>
         <translation>//CFG Name: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1155"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1187"/>
         <source>//CFG 版本: </source>
         <translation>//CFG Version: </translation>
     </message>
@@ -961,57 +1067,57 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">//AM is a program developed by Alivn for deploying CS2 CFG, aimed at providing more convenient distribution services for CFG creators and convenient configuration services for users\n</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1164"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1196"/>
         <source>//开发者:Github(https://github.com/AsulTop),网站(http://www.asul.top)</source>
         <translation>//Developer:Github(https://github.com/AsulTop),Website(http://www.asul.top)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1165"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1197"/>
         <source>//配置时间: </source>
         <translation>//Configuration Time: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1213"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1245"/>
         <source>AUTOINSTALL.bat 创建失败</source>
         <translation>AUTOINSTALL.bat Creation Failed</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1228"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1260"/>
         <source>自动</source>
         <translation>Auto</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1228"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1260"/>
         <source>运行失败，请查看帮助文档</source>
         <translation>Failed To Run,Please Check The Help Document</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1240"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1272"/>
         <source>没有存在的 AutoExec.cfg 文件 是否创建?</source>
         <translation>There is no existing AutoExec.cfg file, do you want to create it？</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1240"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1272"/>
         <source>(不创建将导致管理失效!)</source>
         <translation>(Not creating will result in management failure!)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1256"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1288"/>
         <source>完成</source>
         <translation>Completed</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1254"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1286"/>
         <source>配置中还有 </source>
         <translation>There Are Also </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1254"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1286"/>
         <source> 个</source>
         <translation> Remain</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1267"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1299"/>
         <source>确认配置?</source>
         <translation>Comfirm Configurations?</translation>
     </message>
@@ -1167,17 +1273,17 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../Sources/T_Manage.cpp" line="131"/>
         <source>: %1</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/T_Manage.cpp" line="172"/>
         <source>[名称:%1,版本:%2,作者:%3]</source>
-        <translation type="unfinished"></translation>
+        <translation>[Name:%1, Version:%2, Author:%3]</translation>
     </message>
     <message>
         <location filename="../Sources/T_Manage.cpp" line="173"/>
         <source>[未找到配置文件]</source>
-        <translation type="unfinished"></translation>
+        <translation>[Configuration file not found]</translation>
     </message>
     <message>
         <location filename="../Sources/T_Manage.cpp" line="212"/>
@@ -1186,8 +1292,12 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Manage.cpp" line="212"/>
+        <source>删除后将导致这个 CFG 无法在此面板中开关</source>
+        <translation>Deleting will cause this CFG to fail to switch in this panel</translation>
+    </message>
+    <message>
         <source>删除后将导致这个 CFG 需要重新启用且无法在此面板中开关</source>
-        <translation>Deleting it will cause this CFG to need to be reactivated and cannot be switched on or off in this panel</translation>
+        <translation type="vanished">Deleting it will cause this CFG to need to be reactivated and cannot be switched on or off in this panel</translation>
     </message>
     <message>
         <location filename="../Sources/T_Manage.cpp" line="237"/>
@@ -1478,12 +1588,12 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../Sources/T_UserSetting.cpp" line="89"/>
         <source>m_yaw</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../Sources/T_UserSetting.cpp" line="90"/>
         <source>m_pitch</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1516,12 +1626,12 @@ There are inherent dangers in the use of any software, and you are solely respon
     <message>
         <location filename="../Sources/W_SCFGTransformer.cpp" line="130"/>
         <source>转换 SCFG 为 CFG 完成</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversion from SCFG to CFG completed</translation>
     </message>
     <message>
         <location filename="../Sources/W_SCFGTransformer.cpp" line="141"/>
         <source>打开文件夹</source>
-        <translation type="unfinished"></translation>
+        <translation>Open folder</translation>
     </message>
     <message>
         <source>转换一个 SCFG 为 CFG</source>
