@@ -1,19 +1,19 @@
 
 
 
-<h1 align="center"><img src="./Pic/favicon.ico" width="64" align="center"> AsulCFGManager (AM)</h1>
+<h1 align="center"><img src="./Pic/favicon.ico" width="64" align="center"> Re-AsulCFGManager (ACM)</h1>
 
 <p align="center">
-    <a href="https://asul.top/CSRM">
-        <img alt="Static Badge" src="https://img.shields.io/badge/website-Alivn-blue?style=for-the-badge">
+    <a href="https://acm.asul.top/">
+        <img alt="Static Badge" src="https://img.shields.io/badge/website-ACM-blue?style=for-the-badge">
     </a>
-    <a href="https://github.com/AsulTop/AsulCFGManager/pulse">
+    <a href="https://github.com/AsulTop/Re-AsulCFGManager/pulse">
         <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/AsulTop/AsulCFGManager?style=for-the-badge">
     </a>
 </p>
 <p align="center">
-    <a href="https://github.com/AsulTop/AsulCFGManager">
-        <img alt="Static Badge" src="https://img.shields.io/badge/AsulCFGManager-Master?style=for-the-badge&logo=github&labelColor=green&color=green">
+    <a href="https://github.com/AsulTop/Re-AsulCFGManager">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Re-AsulCFGManager-Main?style=for-the-badge&logo=github&labelColor=green&color=green">
     </a>
     <!-- <a href="https://github.com/eLecCap1taL/AutoSettings">
         <img alt="Static Badge" src="https://img.shields.io/badge/Manager-Manager?style=for-the-badge&logo=github&labelColor=yellow&color=yellow">
@@ -23,10 +23,10 @@
     </a>
 </p>
 
-# AsulCFGManager - CS2 配置管理工具
+# Re-AsulCFGManager - CS2 配置管理工具
 --- 
 ## 项目简介
-**AsulCFGManager** 是一个高效、用户友好的配置管理工具，专为《反恐精英 2》（CS2）设计。该工具支持导入、解析和管理游戏配置文件（CFG），旨在提升玩家的游戏体验和设置管理效率。
+**Re-AsulCFGManager** 是一个高效、用户友好的配置管理工具，专为《反恐精英 2》（CS2）设计。该工具支持导入、解析和管理游戏配置文件（CFG），旨在提升玩家的游戏体验和设置管理效率。
 
 ## 主要功能
 - **安装包导入**：轻松导入预先准备的 CS2 配置安装包。
@@ -58,10 +58,10 @@ cd ElaWidgetTool
    cd build
    cmake .. -G "MinGW Makefiles" -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=Release
    ```
-7. 使用 Qt Creator 打开 `FluentCSRM.pro` 文件，配置编译选项。
+7. 使用 Qt Creator 打开 `AsulCFGManager.pro` 文件，配置编译选项。
 8. 或者通过命令行构建：
    ```bash
-   qmake FluentCSRM.pro
+   qmake AsulCFGManager.pro
    make
    ```
 
@@ -69,7 +69,7 @@ cd ElaWidgetTool
 在构建完成后，执行生成的可执行文件以启动程序。
 
 ## 使用说明
-1. 启动 AsulCFGManager。
+1. 启动 Re-AsulCFGManager。
 2. 点击“导入配置”，选择准备好的 CS2 安装包。
 3. 工具将自动解析并将配置文件复制至游戏配置目录。
 4. 利用界面功能快速切换和应用所需配置。
