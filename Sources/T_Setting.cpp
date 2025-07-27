@@ -1,4 +1,5 @@
 #include "../Headers/T_Setting.h"
+#include "ElaApplication.h"
 #include "ElaToggleSwitch.h"
 #include "../Headers/F_SystemInfo.h"
 #include "../Headers/BanElaComboBox.h"
@@ -242,6 +243,40 @@ T_Setting::T_Setting(QWidget *parent,bool ReadHWInfo)
             setting.setValue("logMode",false);
         }
     });
+    ElaComboBox *SwitchDisplayMode=new ElaComboBox(this);
+    SwitchDisplayMode->addItems(QString{"Normal ElaMica Mica MicaAlt Acrylic DWMBlur"}.split(" "));
+
+    connect(SwitchDisplayMode,&ElaComboBox::currentIndexChanged,[=](int index){
+
+        switch (index){
+        case 0:
+            // eApp->setElaMicaImagePath(filePath);
+            eApp->setWindowDisplayMode(ElaApplicationType::Normal);
+
+            break;
+        case 1:
+            // eApp->setElaMicaImagePath(filePath);
+            eApp->setWindowDisplayMode(ElaApplicationType::ElaMica);
+            break;
+        case 2:
+            // eApp->setElaMicaImagePath(filePath);
+            eApp->setWindowDisplayMode(ElaApplicationType::Mica);
+            break;
+        case 3:
+            // eApp->setElaMicaImagePath(filePath);
+            eApp->setWindowDisplayMode(ElaApplicationType::MicaAlt);
+            break;
+        case 4:
+            // eApp->setElaMicaImagePath(filePath);
+            eApp->setWindowDisplayMode(ElaApplicationType::Acrylic);
+            break;
+        case 5:
+            // eApp->setElaMicaImagePath(filePath);
+            eApp->setWindowDisplayMode(ElaApplicationType::DWMBlur);
+            break;
+        }
+        gSettings->setDisplayMode(index);
+    });
     ElaScrollPageArea *logArea=GenerateArea(this,new ElaText(tr("开启日志 (可能会有性能问题)"),this),logMode,false);
     centerVLayout->addWidget(steamPathArea);
     centerVLayout->addWidget(perfectPathArea);
@@ -249,7 +284,9 @@ T_Setting::T_Setting(QWidget *parent,bool ReadHWInfo)
     centerVLayout->addWidget(previewArea);
     centerVLayout->addWidget(openArea);
     centerVLayout->addWidget(languageArea);
+    centerVLayout->addWidget(GenerateArea(this,new ElaText(tr("显示模式"),this),SwitchDisplayMode,false));
     centerVLayout->addWidget(logArea);
+
     centerVLayout->addStretch();
 
     // centerVLayout->addWidget();

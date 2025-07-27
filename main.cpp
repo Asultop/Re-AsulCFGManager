@@ -59,6 +59,28 @@ int main(int argc, char *argv[])
     bool dark=setting.value("DarkTheme").toBool();
     QString lang=setting.value("Language").toString();
     QStringList SupportLang={"zh_CN","en_US"};
+    int displayMode=setting.value("DisplayMode").toInt();
+    eApp->setWindowDisplayMode(ElaApplicationType::Normal);
+    // switch (displayMode){
+    //     case 0:
+    //         eApp->setWindowDisplayMode(ElaApplicationType::Normal);
+    //         break;
+    //     case 1:
+    //         eApp->setWindowDisplayMode(ElaApplicationType::ElaMica);
+    //         break;
+    //     case 2:
+    //         eApp->setWindowDisplayMode(ElaApplicationType::Mica);
+    //         break;
+    //     case 3:
+    //         eApp->setWindowDisplayMode(ElaApplicationType::MicaAlt);
+    //         break;
+    //     case 4:
+    //         eApp->setWindowDisplayMode(ElaApplicationType::Acrylic);
+    //         break;
+    //     case 5:
+    //         eApp->setWindowDisplayMode(ElaApplicationType::DWMBlur);
+    //         break;
+    // }
     QTranslator translator;
     if(lang.isEmpty()&&!SupportLang.contains(lang)){
 

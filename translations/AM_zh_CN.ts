@@ -4,7 +4,7 @@
 <context>
     <name>Asul</name>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="64"/>
+        <location filename="../AsulCFGManager.cpp" line="65"/>
         <source>查看</source>
         <translation>查看</translation>
     </message>
@@ -25,128 +25,128 @@
         <translation type="vanished">忽略</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="74"/>
+        <location filename="../AsulCFGManager.cpp" line="75"/>
         <source>请允许我们查看 AutoExec.cfg 文件 </source>
         <comment>查看文件</comment>
         <translation>请允许我们查看 AutoExec.cfg 文件 </translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="76"/>
+        <location filename="../AsulCFGManager.cpp" line="77"/>
         <source>同意</source>
         <comment>同意</comment>
         <translation>同意</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="77"/>
+        <location filename="../AsulCFGManager.cpp" line="78"/>
         <source>不同意</source>
         <comment>不同意</comment>
         <translation>不同意</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="78"/>
+        <location filename="../AsulCFGManager.cpp" line="79"/>
         <source>忽略</source>
         <comment>忽略</comment>
         <translation>忽略</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="97"/>
+        <location filename="../AsulCFGManager.cpp" line="98"/>
         <source>获取</source>
         <comment>Get</comment>
         <translation>获取</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="97"/>
+        <location filename="../AsulCFGManager.cpp" line="98"/>
         <source>允许我们获取设备信息</source>
         <comment>GetHW</comment>
         <translation>允许我们获取设备信息</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="167"/>
+        <location filename="../AsulCFGManager.cpp" line="171"/>
         <source>完美平台</source>
         <translation>完美平台</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="167"/>
+        <location filename="../AsulCFGManager.cpp" line="171"/>
         <source>未启动无法自动获取路径</source>
         <translation>未启动无法自动获取路径</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="212"/>
+        <location filename="../AsulCFGManager.cpp" line="216"/>
         <source>主菜单</source>
         <translation>主菜单</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="213"/>
+        <location filename="../AsulCFGManager.cpp" line="217"/>
         <source>安装 | 管理配置</source>
         <translation>安装 | 管理配置</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="214"/>
+        <location filename="../AsulCFGManager.cpp" line="218"/>
         <source>管理 | 开关</source>
         <translation>管理 | 开关</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="215"/>
+        <location filename="../AsulCFGManager.cpp" line="219"/>
         <source>用户</source>
         <translation>用户</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="218"/>
+        <location filename="../AsulCFGManager.cpp" line="222"/>
         <source>接入</source>
         <translation>接入</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="219"/>
+        <location filename="../AsulCFGManager.cpp" line="223"/>
         <source>关于</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="220"/>
+        <location filename="../AsulCFGManager.cpp" line="224"/>
         <source>设置</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="237"/>
+        <location filename="../AsulCFGManager.cpp" line="241"/>
         <source>错误</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="243"/>
+        <location filename="../AsulCFGManager.cpp" line="247"/>
         <source>CFG 文件目录未配置</source>
         <translation>CFG 文件目录未配置</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="248"/>
+        <location filename="../AsulCFGManager.cpp" line="252"/>
         <source>返回</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="249"/>
+        <location filename="../AsulCFGManager.cpp" line="253"/>
         <source>前往配置</source>
         <translation>前往配置</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="250"/>
+        <location filename="../AsulCFGManager.cpp" line="254"/>
         <source>确定</source>
         <translation>确定</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="339"/>
+        <location filename="../AsulCFGManager.cpp" line="343"/>
         <source>成功</source>
         <translation>成功</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="339"/>
+        <location filename="../AsulCFGManager.cpp" line="343"/>
         <source>转换器启动中</source>
         <translation>转换器启动中</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="352"/>
+        <location filename="../AsulCFGManager.cpp" line="356"/>
         <source>关闭</source>
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="352"/>
+        <location filename="../AsulCFGManager.cpp" line="356"/>
         <source>确定要关闭此程序?</source>
         <translation></translation>
     </message>
@@ -1344,9 +1344,9 @@ There are inherent dangers in the use of any software, and you are solely respon
 <context>
     <name>T_Setting</name>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="14"/>
-        <location filename="../Sources/T_Setting.cpp" line="136"/>
-        <location filename="../Sources/T_Setting.cpp" line="141"/>
+        <location filename="../Sources/T_Setting.cpp" line="15"/>
+        <location filename="../Sources/T_Setting.cpp" line="137"/>
+        <location filename="../Sources/T_Setting.cpp" line="142"/>
         <source>设置</source>
         <translation>设置</translation>
     </message>
@@ -1355,188 +1355,193 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">调整 ACMG 的配置</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="14"/>
+        <location filename="../Sources/T_Setting.cpp" line="15"/>
         <source>调整 ACM 的配置</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="18"/>
+        <location filename="../Sources/T_Setting.cpp" line="19"/>
         <source>CFG路径: </source>
         <translation>CFG路径: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="30"/>
-        <location filename="../Sources/T_Setting.cpp" line="54"/>
+        <location filename="../Sources/T_Setting.cpp" line="31"/>
+        <location filename="../Sources/T_Setting.cpp" line="55"/>
         <source>选择文件夹</source>
         <translation>选择文件夹</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="34"/>
-        <location filename="../Sources/T_Setting.cpp" line="58"/>
+        <location filename="../Sources/T_Setting.cpp" line="35"/>
+        <location filename="../Sources/T_Setting.cpp" line="59"/>
         <source>也许</source>
         <translation>也许</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="34"/>
-        <location filename="../Sources/T_Setting.cpp" line="58"/>
+        <location filename="../Sources/T_Setting.cpp" line="35"/>
+        <location filename="../Sources/T_Setting.cpp" line="59"/>
         <source>这并非是一个有效的目录...</source>
         <translation>这并非是一个有效的目录...</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="43"/>
+        <location filename="../Sources/T_Setting.cpp" line="44"/>
         <source>完美Resource路径:</source>
         <translation>完美Resource路径:</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="75"/>
+        <location filename="../Sources/T_Setting.cpp" line="76"/>
         <source>自动运行: (单击切换)</source>
         <translation>自动运行：（单击切换）</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="76"/>
+        <location filename="../Sources/T_Setting.cpp" line="77"/>
         <source>单击切换状态</source>
         <translation>点击切换状态</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="92"/>
+        <location filename="../Sources/T_Setting.cpp" line="93"/>
         <source>打开CFG目录</source>
         <translation>打开CFG目录</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="96"/>
+        <location filename="../Sources/T_Setting.cpp" line="97"/>
         <source>打开帮助文档</source>
         <translation>打开帮助文档</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="98"/>
+        <location filename="../Sources/T_Setting.cpp" line="99"/>
         <source>运行自动程序</source>
         <translation>运行自动程序</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="130"/>
+        <location filename="../Sources/T_Setting.cpp" line="131"/>
         <source>打开目录</source>
         <translation>打开目录</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="132"/>
+        <location filename="../Sources/T_Setting.cpp" line="133"/>
         <source>CFG 目标地址</source>
         <translation>CFG 目标地址</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="133"/>
+        <location filename="../Sources/T_Setting.cpp" line="134"/>
         <source>完美 Resource 地址</source>
         <translation>完美 Resource 地址</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="136"/>
+        <location filename="../Sources/T_Setting.cpp" line="137"/>
         <source>打开 CFG 文件夹失败</source>
         <translation>打开 CFG 文件夹失败</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="141"/>
+        <location filename="../Sources/T_Setting.cpp" line="142"/>
         <source>打开 完美Resources 文件夹失败</source>
         <translation>打开 完美Resources 文件夹失败</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="150"/>
+        <location filename="../Sources/T_Setting.cpp" line="151"/>
         <source>显示</source>
         <translation>显示</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="151"/>
+        <location filename="../Sources/T_Setting.cpp" line="152"/>
         <source>配置时实时显示配置文件详细信息</source>
         <translation>配置时实时显示配置文件详细信息</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="166"/>
-        <location filename="../Sources/T_Setting.cpp" line="182"/>
+        <location filename="../Sources/T_Setting.cpp" line="167"/>
+        <location filename="../Sources/T_Setting.cpp" line="183"/>
         <source>更新</source>
         <translation>更新</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="178"/>
-        <location filename="../Sources/T_Setting.cpp" line="183"/>
-        <location filename="../Sources/T_Setting.cpp" line="186"/>
-        <location filename="../Sources/T_Setting.cpp" line="199"/>
+        <location filename="../Sources/T_Setting.cpp" line="179"/>
+        <location filename="../Sources/T_Setting.cpp" line="184"/>
+        <location filename="../Sources/T_Setting.cpp" line="187"/>
+        <location filename="../Sources/T_Setting.cpp" line="200"/>
         <source>配置</source>
         <translation>配置</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="178"/>
+        <location filename="../Sources/T_Setting.cpp" line="179"/>
         <source>请重启以同意我们获取硬件信息</source>
         <translation>请重启以同意我们获取硬件信息</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="183"/>
-        <location filename="../Sources/T_Setting.cpp" line="186"/>
+        <location filename="../Sources/T_Setting.cpp" line="184"/>
+        <location filename="../Sources/T_Setting.cpp" line="187"/>
         <source>正在获取中...</source>
         <translation>正在获取中...</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="187"/>
+        <location filename="../Sources/T_Setting.cpp" line="188"/>
         <source>更新中..</source>
         <translation>更新中..</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="199"/>
+        <location filename="../Sources/T_Setting.cpp" line="200"/>
         <source>更新成功!</source>
         <translation>更新成功！</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="222"/>
-        <location filename="../Sources/T_Setting.cpp" line="227"/>
+        <location filename="../Sources/T_Setting.cpp" line="223"/>
+        <location filename="../Sources/T_Setting.cpp" line="228"/>
         <source>语言</source>
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="222"/>
-        <location filename="../Sources/T_Setting.cpp" line="227"/>
+        <location filename="../Sources/T_Setting.cpp" line="223"/>
+        <location filename="../Sources/T_Setting.cpp" line="228"/>
         <source>重启以更换语言</source>
         <translation>重启程序以更换语言</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="232"/>
+        <location filename="../Sources/T_Setting.cpp" line="233"/>
         <source>切换语言</source>
         <translation>切换语言</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="239"/>
+        <location filename="../Sources/T_Setting.cpp" line="240"/>
         <source>日志</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="239"/>
+        <location filename="../Sources/T_Setting.cpp" line="240"/>
         <source>重启生效，开启日志可能会导致 **性能问题** </source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="245"/>
+        <location filename="../Sources/T_Setting.cpp" line="287"/>
+        <source>显示模式</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Setting.cpp" line="280"/>
         <source>开启日志 (可能会有性能问题)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="258"/>
-        <location filename="../Sources/T_Setting.cpp" line="259"/>
+        <location filename="../Sources/T_Setting.cpp" line="295"/>
+        <location filename="../Sources/T_Setting.cpp" line="296"/>
         <source>选择</source>
         <translation>选择</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="261"/>
-        <location filename="../Sources/T_Setting.cpp" line="262"/>
-        <location filename="../Sources/T_Setting.cpp" line="263"/>
-        <location filename="../Sources/T_Setting.cpp" line="264"/>
+        <location filename="../Sources/T_Setting.cpp" line="298"/>
+        <location filename="../Sources/T_Setting.cpp" line="299"/>
+        <location filename="../Sources/T_Setting.cpp" line="300"/>
+        <location filename="../Sources/T_Setting.cpp" line="301"/>
         <source>未知</source>
         <translation>未知</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="261"/>
-        <location filename="../Sources/T_Setting.cpp" line="263"/>
+        <location filename="../Sources/T_Setting.cpp" line="298"/>
+        <location filename="../Sources/T_Setting.cpp" line="300"/>
         <source>厂商</source>
         <translation>厂商</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="262"/>
-        <location filename="../Sources/T_Setting.cpp" line="264"/>
+        <location filename="../Sources/T_Setting.cpp" line="299"/>
+        <location filename="../Sources/T_Setting.cpp" line="301"/>
         <source>型号</source>
         <translation>型号</translation>
     </message>

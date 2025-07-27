@@ -41,6 +41,7 @@ Asul::Asul(QWidget *parent)
     readPolicy=setting.value("ReadPolicy").toBool();
     hwInfo=setting.value("ReadHWInfo").toBool();
     logMode=setting.value("LogMode").toBool();
+    gSettings->setDisplayMode(setting.value("DisplayMode").toInt());
     if(logMode){
         // ElaLog::getInstance()->initMessageLog(true);
         // ElaLog::getInstance()->setIsLogFileNameWithTime(true);
@@ -97,7 +98,10 @@ Asul::Asul(QWidget *parent)
         hwInfo = BaseScrollPage::askDialog(this,tr("获取","Get"),tr("允许我们获取设备信息","GetHW"));
         setting.setValue("ReadHWInfo",hwInfo);
     }
-
+    connect(gSettings,&GlobalSettings::pDisplayModeChanged,[=](){
+        QSettings settings("HKEY_CURRENT_USER\\Software\\Asul\\AM",QSettings::NativeFormat);
+        settings.setValue("DisplayMode",gSettings->getDisplayMode());
+    });
     this->setUserInfoCardPixmap(QPixmap(QString(":/pic/Pic/favicon.png").replace("favicon.png",eTheme->getThemeMode()==ElaThemeType::Light?"favicon_dark.png":"favicon.png")));
     connect(eTheme,&ElaTheme::themeModeChanged,[=](){
         this->setUserInfoCardPixmap(QPixmap(QString(":/pic/Pic/favicon.png").replace("favicon.png",eTheme->getThemeMode()==ElaThemeType::Light?"favicon_dark.png":"favicon.png")));
@@ -153,7 +157,7 @@ Asul::Asul(QWidget *parent)
         eApp->setWindowDisplayMode(ElaApplicationType::Mica);
     };
     //CaptureScreenShotAndEnableMica();
-    eApp->setWindowDisplayMode(ElaApplicationType::Acrylic);
+    // eApp->setWindowDisplayMode(ElaApplicationType::Acrylic);
 
 
     // Build StackedPage;
@@ -356,8 +360,6 @@ Asul::Asul(QWidget *parent)
             SCFGPage->destroyed();
         }
     });
-
-    eApp->setWindowDisplayMode(ElaApplicationType::Acrylic);
 
 
     connect(gSettings,&GlobalSettings::pAutoHelpChanged,[=](){

@@ -24,6 +24,7 @@ class GlobalSettings : public QObject
     Q_PROPERTY_CREATE(QString,SteamUserPath);
     Q_PROPERTY_CREATE(QString,SteamConfPath);
     Q_PROPERTY_CREATE(QString,PerfectPath);
+    Q_PROPERTY_CREATE(int,DisplayMode);
     Q_PROPERTY_CREATE(bool,AutoExe);
     Q_PROPERTY_CREATE(bool,AutoDir);
     Q_PROPERTY_CREATE(bool,AutoHelp);
