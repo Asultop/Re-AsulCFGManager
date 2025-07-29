@@ -31,7 +31,7 @@ jobs:
         pw: ${{ secrets.QTPASSWD }}
 
     - name: Set up MinGW
-      uses: coffeebe4code/setup-mingw@v1-beta-2
+      uses: AsulTop/setup-mingw@v2.1
       with:
         platform: x64
         version: 11.2.0
