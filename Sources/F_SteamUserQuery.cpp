@@ -15,11 +15,8 @@ QList<SteamUserInfo> F_SteamUserQuery::parseUsersFile(const QString& filePath) {
     QList<SteamUserInfo> userList;
 
     try {
-        // 1. 读取文件内容
         std::ifstream fileS(filePath.toStdString());
         auto root = tyti::vdf::read(fileS);
-
-        // 3. 获取users节点
         // auto& childs = root.childs["users"];
         for(const auto& child : root.childs){
             SteamUserInfo userInfo;

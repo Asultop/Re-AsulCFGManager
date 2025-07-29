@@ -1422,6 +1422,7 @@ void T_Deploy::createDirectories(const QString &path) {
 }
 
 void T_Deploy::uninstallCFG(QString location){
+    qDebug()<<(location);
     QString userConf=gSettings->getSteamConfPath()+"/loginusers.vdf";
     QList<SteamUserInfo> allUsers = F_SteamUserQuery::parseUsersFile(userConf);
     QString userMachieLocation = R"(%STEAM_USERPATH%%STEAM_SHORTID%/730/local/cfg/cs2_machine_convars.vcfg)";
@@ -1439,6 +1440,8 @@ void T_Deploy::uninstallCFG(QString location){
 
     if(askDialog(this,tr("注意"),tr("这会重置 ")+userName+tr("(**最近登陆**) 的所有按键绑定设置! "))){
         QFile cs2_user_keys_0_slot0(userFileLocation);
+        //Delete CFG Dir
+        QDir(location).removeRecursively();
         if (!cs2_user_keys_0_slot0.open(QIODevice::WriteOnly | QIODevice::Text)) {
             qDebug() << "无法打开文件：" << cs2_user_keys_0_slot0.errorString();
             return;
@@ -1512,8 +1515,7 @@ R"("config"
             return;
         }
 
-        //Delete CFG Dir
-        QDir(location).removeRecursively();
+        
     }
 }
 

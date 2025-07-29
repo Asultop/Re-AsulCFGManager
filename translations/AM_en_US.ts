@@ -167,22 +167,22 @@
 <context>
     <name>F_SteamUserQuery</name>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="39"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="36"/>
         <source>成功解析</source>
         <translation>Successfully parsed</translation>
     </message>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="39"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="36"/>
         <source>个用户</source>
         <translation>User</translation>
     </message>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="42"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="39"/>
         <source>VDF解析错误:</source>
         <translation>VDF file parsing failed:</translation>
     </message>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="71"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="68"/>
         <source>错误：无效的SteamID64（小于基数）</source>
         <translation>Error: Unknown&apos;s SteamID64 (less than Base Num)</translation>
     </message>
@@ -204,7 +204,6 @@
     <name>MainWindow</name>
     <message>
         <location filename="../3rd/qmarkdowntextedit/mainwindow.ui" line="21"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_mainwindow.h" line="70"/>
         <source>QMarkdownTextEdit
 ==============
 
@@ -240,170 +239,102 @@ There are inherent dangers in the use of any software, and you are solely respon
     <name>QPlainTextEditSearchWidget</name>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="32"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="212"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <source>Find in text</source>
         <translation>Find in text</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="39"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="213"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <source>Replace with</source>
         <translation>Replace with</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="53"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="214"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <source>Find:</source>
         <translation>Find:</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="63"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="216"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <source>Search backward</source>
         <translation>Search backward</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="80"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="219"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <source>Replace:</source>
         <translation>Replace:</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="90"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="221"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <source>Close search</source>
         <translation>Close search</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="107"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="225"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <source>Advanced search / replace text</source>
         <translation>Advanced search / replace text</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="127"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="229"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <source>Search forward</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="144"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="233"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <source>Match case sensitive</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="164"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="236"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <source>Mode:</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="193"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="237"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <source>Plain text</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="198"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="238"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <source>Whole words</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="203"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="239"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <source>Regular expression</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="224"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="242"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <source>Replace one text occurrence</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="227"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="244"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <source>Replace</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="237"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="246"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <source>Replace all text occurrences</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="240"/>
-        <location filename="../3rd/qmarkdowntextedit/build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/ui_qplaintexteditsearchwidget.h" line="248"/>
-        <location filename="../build/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
-        <location filename="../build/Desktop_Qt_6_7_3_MinGW_64_bit-Release/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <source>Replace all</source>
         <translation></translation>
@@ -816,62 +747,62 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation> [key] Unable to find complete parameters</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1440"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1536"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1441"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1538"/>
         <source>注意</source>
         <translation>Attension</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1440"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1536"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1441"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1538"/>
         <source>这会重置 </source>
         <translation>This will reset</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1440"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1536"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1441"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1538"/>
         <source>(**最近登陆**) 的所有按键绑定设置! </source>
         <translation>All key binding settings of (** Recently logged in **)!</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1458"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1554"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1461"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1556"/>
         <source>无法打开文件: </source>
         <translation>Cannot open file: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1469"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1565"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1472"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1567"/>
         <source>解析失败: </source>
         <translation>Parsing failed:</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1474"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1570"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1477"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1572"/>
         <source>[内部错误] VDF 格式错误!</source>
         <translation>[Internal error] VDF format error!</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1481"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1577"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1484"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1579"/>
         <source>[内部错误] convar 节点丢失</source>
         <translation>[Internal error] The convar node is missing</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1497"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1593"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1500"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1595"/>
         <source>无法打开文件进行写入: </source>
         <translation>Unable to open file for writing: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1507"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1603"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1510"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1605"/>
         <source>操作成功</source>
         <translation>Operation Succeeded</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1511"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1607"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1514"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1609"/>
         <source>VDF 操作错误: </source>
         <translation>VDF operation error:</translation>
     </message>

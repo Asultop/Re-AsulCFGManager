@@ -32,7 +32,7 @@ T_About::T_About (QWidget* parent)
     });
 
     // 版本信息
-    ElaText* versionText = new ElaText ("AsulCFGManager [V1.0.2]", this);
+    ElaText* versionText = new ElaText ("AsulCFGManager [V1.0.1]", this);
     QFont versionTextFont = versionText->font ();
     versionTextFont.setWeight (QFont::Bold);
     versionText->setFont (versionTextFont);
