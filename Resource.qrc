@@ -39,5 +39,6 @@
     <qresource prefix="/lang">
         <file>translations/AM_en_US.qm</file>
         <file>translations/AM_zh_CN.qm</file>
+        <file>translations/AM_ru_RU.qm</file>
     </qresource>
 </RCC>

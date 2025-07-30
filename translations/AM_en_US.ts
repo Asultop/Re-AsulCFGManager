@@ -201,141 +201,89 @@
     </message>
 </context>
 <context>
-    <name>MainWindow</name>
-    <message>
-        <location filename="../3rd/qmarkdowntextedit/mainwindow.ui" line="21"/>
-        <source>QMarkdownTextEdit
-==============
-
-*QMarkdownTextEdit* is a C++ Qt [QPlainTextEdit](http://doc.qt.io/qt-5/qplaintextedit.html) widget with **markdown highlighting** and some other goodies.
-
-## Features
-
-- markdown highlighting
-- syntax highlighting
-- clickable links with `Ctrl + Click`
-- ~strikedout~ text and `inline code;`
-- block indent with `Tab` and `Shift + Tab`
-- duplicate text with `Ctrl + Alt + Down`
-- searching of text with `Ctrl + F`
-    - jump between search results with `Up` and `Down`
-    - close search field with `Escape`
-- and much more...
-
-## References
-
-- [QOwnNotes - cross-platform open source plain-text file markdown note taking](https://www.qownnotes.org)
-
-## Disclaimer
-
-This SOFTWARE PRODUCT is provided by THE PROVIDER &quot;as is&quot; and &quot;with all faults.&quot; THE PROVIDER makes no representations or warranties of any kind concerning the safety, suitability, lack of viruses, inaccuracies, typographical errors, or other harmful components of this SOFTWARE PRODUCT. 
-
-There are inherent dangers in the use of any software, and you are solely responsible for determining whether this SOFTWARE PRODUCT is compatible with your equipment and other software installed on your equipment. You are also solely responsible for the protection of your equipment and backup of your data, and THE PROVIDER will not be liable for any damages you may suffer in connection with using, modifying, or distributing this SOFTWARE PRODUCT.
-</source>
-        <translation></translation>
-    </message>
-</context>
-<context>
     <name>QPlainTextEditSearchWidget</name>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="32"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="212"/>
         <source>Find in text</source>
         <translation>Find in text</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="39"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="213"/>
         <source>Replace with</source>
         <translation>Replace with</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="53"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="214"/>
         <source>Find:</source>
         <translation>Find:</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="63"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="216"/>
         <source>Search backward</source>
         <translation>Search backward</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="80"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="219"/>
         <source>Replace:</source>
         <translation>Replace:</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="90"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="221"/>
         <source>Close search</source>
         <translation>Close search</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="107"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="225"/>
         <source>Advanced search / replace text</source>
         <translation>Advanced search / replace text</translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="127"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="229"/>
         <source>Search forward</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="144"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="233"/>
         <source>Match case sensitive</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="164"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="236"/>
         <source>Mode:</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="193"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="237"/>
         <source>Plain text</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="198"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="238"/>
         <source>Whole words</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="203"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="239"/>
         <source>Regular expression</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="224"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="242"/>
         <source>Replace one text occurrence</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="227"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="244"/>
         <source>Replace</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="237"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="246"/>
         <source>Replace all text occurrences</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../3rd/qmarkdowntextedit/qplaintexteditsearchwidget.ui" line="240"/>
-        <location filename="../build/Re-AsulCFGManager_autogen/include/ui_qplaintexteditsearchwidget.h" line="248"/>
         <source>Replace all</source>
         <translation></translation>
     </message>
@@ -1410,34 +1358,34 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation>Update Successfully!</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="223"/>
-        <location filename="../Sources/T_Setting.cpp" line="228"/>
+        <location filename="../Sources/T_Setting.cpp" line="225"/>
+        <location filename="../Sources/T_Setting.cpp" line="230"/>
         <source>语言</source>
         <translation>Language</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="223"/>
-        <location filename="../Sources/T_Setting.cpp" line="228"/>
+        <location filename="../Sources/T_Setting.cpp" line="225"/>
+        <location filename="../Sources/T_Setting.cpp" line="230"/>
         <source>重启以更换语言</source>
         <translation>Restart To Change Language</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="233"/>
+        <location filename="../Sources/T_Setting.cpp" line="235"/>
         <source>切换语言</source>
         <translation>Switch Language</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="240"/>
+        <location filename="../Sources/T_Setting.cpp" line="242"/>
         <source>日志</source>
         <translation>Log</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="240"/>
+        <location filename="../Sources/T_Setting.cpp" line="242"/>
         <source>重启生效，开启日志可能会导致 **性能问题** </source>
         <translation>Restart to active,(may cause **performance issue**) </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="287"/>
+        <location filename="../Sources/T_Setting.cpp" line="289"/>
         <source>显示模式</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1446,33 +1394,33 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">Restart to active,(may cause performance issue)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="280"/>
+        <location filename="../Sources/T_Setting.cpp" line="282"/>
         <source>开启日志 (可能会有性能问题)</source>
         <translation>Log</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="295"/>
-        <location filename="../Sources/T_Setting.cpp" line="296"/>
+        <location filename="../Sources/T_Setting.cpp" line="297"/>
+        <location filename="../Sources/T_Setting.cpp" line="298"/>
         <source>选择</source>
         <translation>Select</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="298"/>
-        <location filename="../Sources/T_Setting.cpp" line="299"/>
         <location filename="../Sources/T_Setting.cpp" line="300"/>
         <location filename="../Sources/T_Setting.cpp" line="301"/>
+        <location filename="../Sources/T_Setting.cpp" line="302"/>
+        <location filename="../Sources/T_Setting.cpp" line="303"/>
         <source>未知</source>
         <translation>Unknown</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="298"/>
         <location filename="../Sources/T_Setting.cpp" line="300"/>
+        <location filename="../Sources/T_Setting.cpp" line="302"/>
         <source>厂商</source>
         <translation>Manufacturer</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Setting.cpp" line="299"/>
         <location filename="../Sources/T_Setting.cpp" line="301"/>
+        <location filename="../Sources/T_Setting.cpp" line="303"/>
         <source>型号</source>
         <translation>Model</translation>
     </message>
@@ -1581,14 +1529,6 @@ There are inherent dangers in the use of any software, and you are solely respon
         <location filename="../Sources/W_SCFGTransformer.cpp" line="133"/>
         <source>SCFG:</source>
         <translation>SCFG:</translation>
-    </message>
-</context>
-<context>
-    <name>example</name>
-    <message>
-        <location filename="../3rd/qmarkdowntextedit/examples/qml/example.qml" line="10"/>
-        <source>QtQuick Project</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
