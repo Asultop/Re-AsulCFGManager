@@ -102,7 +102,8 @@ else:win32-g++: PRE_TARGETDEPS += $$PWD/install/lib/libElaWidgetTools.a
 
 TRANSLATIONS += \
     translations/AM_zh_CN.ts \
-    translations/AM_en_US.ts
+    translations/AM_en_US.ts \
+    translations/AM_ru_RU.ts
 
 include (3rd/qmarkdowntextedit/qmarkdowntextedit.pri)
 include (3rd/QsLog/QsLog.pri)

@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     QSettings setting("HKEY_CURRENT_USER\\Software\\Asul\\AM",QSettings::NativeFormat);
     bool dark=setting.value("DarkTheme").toBool();
     QString lang=setting.value("Language").toString();
-    QStringList SupportLang={"zh_CN","en_US"};
+    QStringList SupportLang={"zh_CN","en_US","ru_RU"};
     int displayMode=setting.value("DisplayMode").toInt();
     eApp->setWindowDisplayMode(ElaApplicationType::Normal);
     // switch (displayMode){
@@ -95,6 +95,10 @@ int main(int argc, char *argv[])
             auto REF=translator.load(":/lang/translations/AM_en_US.qm");
             Q_UNUSED(REF);
             lang="en_US";
+        }else if(QLocale::Russian == lab){
+            auto REF=translator.load(":/lang/translations/AM_ru_RU.qm");
+            Q_UNUSED(REF);
+            lang="ru_RU";
         }
 
         setting.setValue("Language",lang);
@@ -104,6 +108,9 @@ int main(int argc, char *argv[])
             Q_UNUSED(REF);
         }else if(lang=="en_US"){
             auto REF=translator.load(":/lang/translations/AM_en_US.qm");
+            Q_UNUSED(REF);
+        }else if(lang=="ru_RU"){
+            auto REF=translator.load(":/lang/translations/AM_ru_RU.qm");
             Q_UNUSED(REF);
         }
     }
