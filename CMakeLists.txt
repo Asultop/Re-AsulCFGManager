@@ -122,6 +122,7 @@ set(RESOURCES
 set(TS_FILES
     translations/AM_zh_CN.ts
     translations/AM_en_US.ts
+    translations/AM_ru_RU.ts
 )
 
 

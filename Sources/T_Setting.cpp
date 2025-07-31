@@ -202,16 +202,18 @@ T_Setting::T_Setting(QWidget *parent,bool ReadHWInfo)
     });
 
     BanElaComboBox *comboLang=new BanElaComboBox(this);
-    comboLang->addItems(QStringList{"简体中文","English"});
+    comboLang->addItems(QStringList{"简体中文","English","Русский"});
     QString currentLang=setting.value("Language").toString();
     QString langIndexTag;
     if(currentLang=="zh_CN") langIndexTag="简体中文";
     else if(currentLang=="en_US") langIndexTag="English";
+    else if(currentLang=="ru_RU") langIndexTag="Русский";
     comboLang->setCurrentText(langIndexTag);
     connect(comboLang,&ElaComboBox::currentTextChanged,[=](QString index){
         QString targetLang,loadFile;
         if(index == "简体中文") targetLang="zh_CN",loadFile=":/lang/translations/AM_zh_CN.qm";
         else if(index == "English") targetLang="en_US",loadFile=":/lang/translations/AM_en_US.qm";
+        else if(index == "Русский") targetLang="ru_RU",loadFile=":/lang/translations/AM_ru_RU.qm";
 
         setting.setValue("Language",targetLang);
         // comboLang->setDisabled()
