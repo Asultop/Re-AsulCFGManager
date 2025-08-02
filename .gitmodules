@@ -1,3 +1,6 @@
 [submodule "ElaWidgetTools"]
 	path = ElaWidgetTools
 	url = https://github.com/Liniyous/ElaWidgetTools
+[submodule "AdaptCFGPackage"]
+	path = AdaptCFGPackage
+	url = https://github.com/Asultop/AdaptCFGPackage
