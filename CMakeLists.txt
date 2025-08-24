@@ -141,8 +141,8 @@ add_executable(${PROJECT_NAME} WIN32
 )
 # Windows资源文件
 if(WIN32)
-    set(RC_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Uac/res.rc)
-    # set(RC_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Uac/res_withoutUAC.rc)
+    # set(RC_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Uac/res.rc)
+    set(RC_FILE ${CMAKE_CURRENT_SOURCE_DIR}/Uac/res_withoutUAC.rc)
     set_source_files_properties(${RC_FILE} PROPERTIES LANGUAGE RC)
     target_sources(${PROJECT_NAME} PRIVATE ${RC_FILE})
     # 链接psapi库

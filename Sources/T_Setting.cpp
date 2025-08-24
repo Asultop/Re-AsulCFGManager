@@ -280,12 +280,26 @@ T_Setting::T_Setting(QWidget *parent,bool ReadHWInfo)
         gSettings->setDisplayMode(index);
     });
     ElaScrollPageArea *logArea=GenerateArea(this,new ElaText(tr("开启日志 (可能会有性能问题)"),this),logMode,false);
+    ElaLineEdit *steamApiKeyEdit=new ElaLineEdit(this);
+    steamApiKeyEdit->setText(gSettings->getSettings()->value("steamApiKey").toString());
+    steamApiKeyEdit->setEchoMode(ElaLineEdit::Password);
+    ElaScrollPageArea *steamApiKeyArea=GenerateArea(this,new ElaText(tr("Steam API Key"),this),steamApiKeyEdit,true);
+    connect(steamApiKeyEdit,&ElaLineEdit::editingFinished,[=](){
+        QString apiKey=steamApiKeyEdit->text();
+        QSettings* set=new QSettings("Asul","AM");
+        // set->setValue("steamApiKey",apiKey);
+        set->setValue("steamApiKey",apiKey);
+        ElaMessageBar::success(ElaMessageBarType::Top,tr("配置"),tr("Steam API Key 已更新"),getReadTime(tr("Steam API Key 已更新")),parent);
+    });
+    
+
     centerVLayout->addWidget(steamPathArea);
     centerVLayout->addWidget(perfectPathArea);
     centerVLayout->addWidget(ToggleArea);
     centerVLayout->addWidget(previewArea);
     centerVLayout->addWidget(openArea);
     centerVLayout->addWidget(languageArea);
+    centerVLayout->addWidget(steamApiKeyArea);
     centerVLayout->addWidget(GenerateArea(this,new ElaText(tr("显示模式"),this),SwitchDisplayMode,false));
     centerVLayout->addWidget(logArea);
 
