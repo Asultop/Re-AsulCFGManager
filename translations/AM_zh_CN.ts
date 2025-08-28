@@ -1084,7 +1084,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Home2.cpp" line="103"/>
-        <location filename="../Sources/T_Home2.cpp" line="141"/>
+        <location filename="../Sources/T_Home2.cpp" line="142"/>
         <source>功能</source>
         <translation>功能</translation>
     </message>
@@ -1105,7 +1105,6 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Home2.cpp" line="124"/>
-        <location filename="../Sources/T_Home2.cpp" line="131"/>
         <source>市场</source>
         <translation>市场</translation>
     </message>
@@ -1130,27 +1129,26 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation>转到下载</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="131"/>
         <source>开发中</source>
-        <translation>开发中</translation>
+        <translation type="vanished">开发中</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="138"/>
+        <location filename="../Sources/T_Home2.cpp" line="139"/>
         <source>接入我们</source>
         <translation>接入我们</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="139"/>
+        <location filename="../Sources/T_Home2.cpp" line="140"/>
         <source>提供格式</source>
         <translation>提供格式</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="142"/>
+        <location filename="../Sources/T_Home2.cpp" line="143"/>
         <source>跳转到 AM 接入详情界面</source>
         <translation>跳转到 AM 接入详情界面</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="143"/>
+        <location filename="../Sources/T_Home2.cpp" line="144"/>
         <source>转到详情</source>
         <translation>转到详情</translation>
     </message>

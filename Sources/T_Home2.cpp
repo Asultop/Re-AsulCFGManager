@@ -128,7 +128,8 @@ T_Home2::T_Home2(QWidget* parent)
     homeCard1->setDetailedText(tr("下载 CFG 本体 （该功能计划中）"));
     homeCard1->setCardButtontext(tr("转到下载"));
     connect(homeCard1,&ElaPopularCard::popularCardButtonClicked,[=](){
-        BaseScrollPage::showSuccEx(tr("市场"),tr("开发中"));
+        // BaseScrollPage::showSuccEx(tr("市场"),tr("开发中"));
+        QDesktopServices::openUrl(QUrl("https://github.com/Asultop/AdaptCFGPackage/"));
         QLOG_DEBUG()<<"[Market] C1";
     });
     // homeCard1->setCardFloatPixmap(QPixmap(""));
@@ -150,6 +151,7 @@ T_Home2::T_Home2(QWidget* parent)
         homeCard1->setCardPixmap(pngLoc);
         homeCard2->setCardPixmap(pngLoc);
     });
+
     ElaFlowLayout* flowLayout = new ElaFlowLayout(0, 5, 5);
     flowLayout->setContentsMargins(30, 0, 0, 0);
     flowLayout->setIsAnimation(true);

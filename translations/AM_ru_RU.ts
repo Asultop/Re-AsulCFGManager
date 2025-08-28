@@ -1079,7 +1079,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Home2.cpp" line="103"/>
-        <location filename="../Sources/T_Home2.cpp" line="141"/>
+        <location filename="../Sources/T_Home2.cpp" line="142"/>
         <source>功能</source>
         <translation>Функции</translation>
     </message>
@@ -1100,7 +1100,6 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Home2.cpp" line="124"/>
-        <location filename="../Sources/T_Home2.cpp" line="131"/>
         <source>市场</source>
         <translation>Маркет</translation>
     </message>
@@ -1125,27 +1124,26 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation>Перейти к скачиванию</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="131"/>
         <source>开发中</source>
-        <translation>В разработке</translation>
+        <translation type="vanished">В разработке</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="138"/>
+        <location filename="../Sources/T_Home2.cpp" line="139"/>
         <source>接入我们</source>
         <translation>Подключиться к нам</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="139"/>
+        <location filename="../Sources/T_Home2.cpp" line="140"/>
         <source>提供格式</source>
         <translation>Предоставить формат</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="142"/>
+        <location filename="../Sources/T_Home2.cpp" line="143"/>
         <source>跳转到 AM 接入详情界面</source>
         <translation>Перейти к интерфейсу подробностей подключения AM</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="143"/>
+        <location filename="../Sources/T_Home2.cpp" line="144"/>
         <source>转到详情</source>
         <translation>Подробнее</translation>
     </message>

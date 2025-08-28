@@ -1080,7 +1080,7 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Home2.cpp" line="103"/>
-        <location filename="../Sources/T_Home2.cpp" line="141"/>
+        <location filename="../Sources/T_Home2.cpp" line="142"/>
         <source>功能</source>
         <translation>Functions</translation>
     </message>
@@ -1101,7 +1101,6 @@ There are inherent dangers in the use of any software, and you are solely respon
     </message>
     <message>
         <location filename="../Sources/T_Home2.cpp" line="124"/>
-        <location filename="../Sources/T_Home2.cpp" line="131"/>
         <source>市场</source>
         <translation>Market</translation>
     </message>
@@ -1126,27 +1125,26 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation>To Download</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="131"/>
         <source>开发中</source>
-        <translation>Under Development</translation>
+        <translation type="vanished">Under Development</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="138"/>
+        <location filename="../Sources/T_Home2.cpp" line="139"/>
         <source>接入我们</source>
         <translation>Access Us</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="139"/>
+        <location filename="../Sources/T_Home2.cpp" line="140"/>
         <source>提供格式</source>
         <translation>Provide Format</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="142"/>
+        <location filename="../Sources/T_Home2.cpp" line="143"/>
         <source>跳转到 AM 接入详情界面</source>
         <translation>Jump To AM Access Details Interface</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Home2.cpp" line="143"/>
+        <location filename="../Sources/T_Home2.cpp" line="144"/>
         <source>转到详情</source>
         <translation>Details</translation>
     </message>
