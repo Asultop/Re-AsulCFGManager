@@ -18,7 +18,7 @@
     <a href="https://github.com/AsulTop/Asultop.github.io">
         <img alt="Static Badge" src="https://img.shields.io/badge/Page-Page?style=for-the-badge&logo=github&labelColor=purple&color=purple">
     </a>
-</p>
+</p> 
 
 <p align="center">
     <a href="#english-version"><strong>English</strong></a> | 
