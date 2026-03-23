@@ -229,9 +229,12 @@ Asul::Asul(QWidget *parent)
         Q_UNUSED(nodeType);
         if (_aboutKey == nodeKey)
         {
-            // aboutpage->setFixedSize(400, 400);
+            if (aboutpage->isVisible()) {
+                return;
+            }
             aboutpage->moveToCenter();
             aboutpage->show();
+            return;
         }
         if(deployPage->property("ElaPageKey").toString() == nodeKey){
             if(settingPage->steamPath.isEmpty()){
@@ -627,4 +630,12 @@ void Asul::showEvent(QShowEvent *event)
         return;
     }
     ElaWindow::showEvent(event);
+}
+
+void Asul::closeEvent(QCloseEvent *event)
+{
+    if (aboutpage && aboutpage->isVisible()) {
+        aboutpage->close();
+    }
+    ElaWindow::closeEvent(event);
 }

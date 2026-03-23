@@ -51,6 +51,11 @@ private:
     ElaPushButton *selectFileButton;
     ElaLineEdit *selectedFilePath;
     ElaFlowLayout *flowLayout;
+    QString getMostRecentSteamShortId() const;
+    QString resolveSteamExecutablePath() const;
+    bool stopSteamProcess();
+    bool startSteamProcess();
+    bool ensureLaunchOptionsContainsArg(const QString &argText);
     bool UnCompressFiles(QString zipFile, QString sDestPath);
     bool UnCompressFiles2(const QString &archivePath, const QString &extractDir);
     QMap<ElaPopularCard*, int> pageNumMap;

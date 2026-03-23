@@ -13,6 +13,7 @@
 #include <QDragEnterEvent>
 #include <QDropEvent>
 #include <QMimeData>
+#include <QCloseEvent>
 class Asul : public AsulWindow
 {
     Q_OBJECT
@@ -45,6 +46,7 @@ public:
     ~Asul();
 
     void showEvent(QShowEvent *event) override;
+    void closeEvent(QCloseEvent *event) override;
 private:
     T_About *aboutpage;
     bool readPolicy,hwInfo,logMode;

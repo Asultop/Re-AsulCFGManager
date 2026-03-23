@@ -21,6 +21,11 @@
 #include "../Headers/BanElaComboBox.h"
 #include <QSettings>
 #include "../3rd/QsLog/QsLog.h"
+#include <algorithm>
+#include <fstream>
+#include <memory>
+#include <QFileInfo>
+#include <QStandardPaths>
 
 
 #define DBG(x) QLOG_DEBUG()<<"[Key] "<<#x<<" : "<<x;
@@ -471,7 +476,8 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
     QString CFGName,CFGAuthor,CFGVersion,CFGDetails;
     QString pngFilePath;
     QString updateVersion;
-    bool INI=false,DIR=false,EXE=false,HELP=false,PNG=false, UPDATE=false;
+    QString launchArg;
+    bool INI=false,DIR=false,EXE=false,HELP=false,PNG=false, UPDATE=false, ARG=false;
     foreach(QString File,asulsFileContent.split("\n")){
         QLOG_DEBUG()<<"[Foreach] "<<asulsFileContent<<" at "<<File;
 
@@ -556,6 +562,17 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
             }
             updateVersion=updateList[1].replace("\r","");
             UPDATE=true;
+            continue;
+        }
+        else if(File.startsWith("[ARG]")){
+            QLOG_DEBUG()<<"[ARG] Part Parsing";
+            launchArg = File.mid(QString("[ARG]").size()).trimmed().replace("\r", "");
+            if (launchArg.isEmpty()) {
+                emit generateError(tr("Asuls 文件(config.asuls): [ARG]错误"));
+                showable=false;
+                return;
+            }
+            ARG=true;
             continue;
         }
         else if(File.isEmpty()) continue;
@@ -1111,6 +1128,8 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
         deployButton->setProperty("HELP",HELP);
         deployButton->setProperty("AsulFileName",asulFileName.replace(".cfg",".asul"));
         deployButton->setProperty("prevCFGFileLocation",prevCFGFileLocation);
+        deployButton->setProperty("ARG", launchArg);
+        deployButton->setProperty("HAS_ARG", ARG);
 
         connect(deployButton,&ElaPushButton::clicked,[=](){
             QString CFGFileName=deployButton->property("CFGFileName").toString();
@@ -1134,6 +1153,8 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 QString CFGDirName=deployButton->property("CFGDirName").toString().replace("\r","");
                 QString CFGExeFile=deployButton->property("exeFile").toString().replace("\r","");
                 QString CFGFileLocation=deployButton->property("CFGFileLocation").toString();
+                QString launchArg=deployButton->property("ARG").toString();
+                bool hasArg=deployButton->property("HAS_ARG").toBool();
 
 
 
@@ -1233,6 +1254,13 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
 
                         return;
                     }
+
+                    if (hasArg) {
+                        if (!ensureLaunchOptionsContainsArg(launchArg)) {
+                            parentWindow->warnTips(parentWindow, tr("ARG"), tr("启动参数写入失败，请检查 Steam 用户配置路径"));
+                        }
+                    }
+
                     if(!exeFile.isEmpty()){
                         if(EXE&&gSettings->getAutoExe()){
                             QLOG_DEBUG()<<"[Deploy_EXE] 将运行:"<<exeFile<<" at "<<CFGPath+"/"+CFGDirName+"/"+exeFile;
@@ -1263,9 +1291,9 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                                 process->deleteLater();
                             });
                         }
-
-                        delete CFGFileInfo;
                     }
+
+                    delete CFGFileInfo;
 
                     QFile autoExecFile(CFGPath+"/"+"autoexec.cfg");
                     if(!autoExecFile.exists()){
@@ -1706,6 +1734,181 @@ QString T_Deploy::replaceArgs(QString val){
         .replace("%GPU_NAME%",GPUName)
         ;
 }
+
+QString T_Deploy::getMostRecentSteamShortId() const {
+    const QString userConf = gSettings->getSteamConfPath() + "/loginusers.vdf";
+    const QList<SteamUserInfo> allUsers = F_SteamUserQuery::parseUsersFile(userConf);
+    if (allUsers.isEmpty()) {
+        return "";
+    }
+
+    for (const auto &usr : allUsers) {
+        if (usr.mostRecent && !usr.userShortId.isEmpty()) {
+            return usr.userShortId;
+        }
+    }
+
+    auto latestIt = std::max_element(allUsers.constBegin(), allUsers.constEnd(),
+                                     [](const SteamUserInfo &a, const SteamUserInfo &b) {
+                                         return a.timestamp < b.timestamp;
+                                     });
+    if (latestIt != allUsers.constEnd()) {
+        return latestIt->userShortId;
+    }
+    return "";
+}
+
+QString T_Deploy::resolveSteamExecutablePath() const {
+    QString steamExe = QStandardPaths::findExecutable("steam.exe");
+    if (!steamExe.isEmpty()) {
+        return steamExe;
+    }
+
+    QString steamRoot = gSettings->getSteamPath();
+    if (steamRoot.isEmpty()) {
+        return "";
+    }
+
+    steamRoot = steamRoot.replace("\\", "/");
+    if (steamRoot.endsWith('/')) {
+        steamRoot.chop(1);
+    }
+    const QString candidate = steamRoot + "/steam.exe";
+    return QFileInfo::exists(candidate) ? candidate : "";
+}
+
+bool T_Deploy::stopSteamProcess() {
+#ifdef Q_OS_WIN
+    QProcess killer;
+    killer.start("taskkill", QStringList() << "/IM" << "steam.exe" << "/F");
+    if (!killer.waitForFinished(15000)) {
+        QLOG_WARN() << "[ARG] 关闭 Steam 超时:" << killer.errorString();
+        return false;
+    }
+
+    // taskkill 找不到进程时返回非 0，这里视作 Steam 已关闭。
+    const QString out = QString::fromLocal8Bit(killer.readAllStandardOutput()) +
+                        QString::fromLocal8Bit(killer.readAllStandardError());
+    if (killer.exitCode() != 0 && !out.contains("not found", Qt::CaseInsensitive)
+        && !out.contains("没有运行的实例", Qt::CaseInsensitive)
+        && !out.contains("没有找到", Qt::CaseInsensitive)) {
+        QLOG_WARN() << "[ARG] 关闭 Steam 失败:" << out;
+        return false;
+    }
+    return true;
+#else
+    return true;
+#endif
+}
+
+bool T_Deploy::startSteamProcess() {
+    const QString steamExe = resolveSteamExecutablePath();
+    if (steamExe.isEmpty()) {
+        QLOG_WARN() << "[ARG] 未找到 steam.exe，无法重启 Steam";
+        return false;
+    }
+    const bool started = QProcess::startDetached(steamExe, QStringList());
+    if (!started) {
+        QLOG_WARN() << "[ARG] 启动 Steam 失败:" << steamExe;
+    }
+    return started;
+}
+
+bool T_Deploy::ensureLaunchOptionsContainsArg(const QString &argText) {
+    const QString cleanedArg = argText.trimmed();
+    if (cleanedArg.isEmpty()) {
+        return true;
+    }
+
+    const bool confirmRestart = askDialog(this,
+                                          tr("ARG"),
+                                          tr("继续执行需要暂时关闭 Steam"));
+    if (!confirmRestart) {
+        QLOG_WARN() << "[ARG] 用户取消 Steam 重启流程";
+        return false;
+    }
+
+    if (!stopSteamProcess()) {
+        QLOG_WARN() << "[ARG] 无法关闭 Steam，终止写入";
+        return false;
+    }
+
+    const QString shortId = getMostRecentSteamShortId();
+    if (shortId.isEmpty()) {
+        QLOG_WARN() << "[ARG] 未找到最近登录用户 shortId";
+        startSteamProcess();
+        return false;
+    }
+
+    const QString localConfigPath = gSettings->getSteamUserPath() + shortId + "/config/localconfig.vdf";
+    std::ifstream file(localConfigPath.toStdString());
+    if (!file.is_open()) {
+        QLOG_WARN() << "[ARG] 无法打开 localconfig.vdf:" << localConfigPath;
+        startSteamProcess();
+        return false;
+    }
+
+    tyti::vdf::Options options;
+    bool parseOk = false;
+    tyti::vdf::object root;
+    try {
+        root = tyti::vdf::read(file, &parseOk, options);
+    } catch (const std::exception &e) {
+        QLOG_WARN() << "[ARG] localconfig.vdf 解析异常:" << e.what();
+        startSteamProcess();
+        return false;
+    }
+
+    if (!parseOk) {
+        QLOG_WARN() << "[ARG] localconfig.vdf 解析失败";
+        startSteamProcess();
+        return false;
+    }
+
+    auto ensureChild = [](tyti::vdf::object &node, const std::string &key) -> tyti::vdf::object * {
+        auto it = node.childs.find(key);
+        if (it == node.childs.end() || !it->second) {
+            node.childs[key] = std::make_unique<tyti::vdf::object>();
+            it = node.childs.find(key);
+        }
+        return it->second.get();
+    };
+
+    tyti::vdf::object *software = ensureChild(root, "Software");
+    tyti::vdf::object *valve = ensureChild(*software, "Valve");
+    tyti::vdf::object *steam = ensureChild(*valve, "Steam");
+    tyti::vdf::object *apps = ensureChild(*steam, "apps");
+    tyti::vdf::object *app730 = ensureChild(*apps, "730");
+
+    std::string &launchOptions = app730->attribs["LaunchOptions"];
+    const std::string argStd = cleanedArg.toStdString();
+
+    if (launchOptions.find(argStd) == std::string::npos) {
+        if (!launchOptions.empty() && launchOptions.back() != ' ') {
+            launchOptions.push_back(' ');
+        }
+        launchOptions += argStd;
+
+        std::ofstream out(localConfigPath.toStdString());
+        if (!out.is_open()) {
+            QLOG_WARN() << "[ARG] 无法写入 localconfig.vdf:" << localConfigPath;
+            startSteamProcess();
+            return false;
+        }
+        tyti::vdf::write(out, root);
+        QLOG_DEBUG() << "[ARG] LaunchOptions 已写入:" << cleanedArg;
+    } else {
+        QLOG_DEBUG() << "[ARG] LaunchOptions 已包含参数，跳过写入";
+    }
+
+    if (!startSteamProcess()) {
+        QLOG_WARN() << "[ARG] VDF 写入完成，但 Steam 重启失败";
+        return false;
+    }
+
+    return true;
+}
+
 T_Deploy::~T_Deploy(){
 
 }
