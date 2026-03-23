@@ -12,6 +12,7 @@ RC_FILE += Uac/res.rc
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 DEFINES += QS_LOG_LINE_NUMBERS # Enable Debug with src line
 
+
 SOURCES += \
     Sources/AsulWindow.cpp \
     Sources/BanElaComboBox.cpp \
