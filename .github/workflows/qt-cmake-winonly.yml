@@ -25,6 +25,8 @@ jobs:
         host: 'windows'
         target: 'desktop'
         arch: 'win64_mingw'
+        cache: true
+        cache-key-prefix: qt-windows-desktop-win64_mingw-6_7
         use-official: true
         aqtversion: '==3.1.19'
         email: ${{ secrets.QTEMAIL }}

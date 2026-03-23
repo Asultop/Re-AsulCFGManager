@@ -1324,7 +1324,12 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
             dialogWidget->setLayout(dialoglayout);
             dialogLine->setMinimumHeight(MiddleHeight);
             dialogLine->setReadOnly(true);
-            dialogLine->setText(tr("确认配置?"));
+            QString confirmText = tr("确认配置?");
+            const bool hasArgInDialog = deployButton->property("HAS_ARG").toBool();
+            if (hasArgInDialog) {
+                confirmText += tr(" 这次配置将重启 Steam");
+            }
+            dialogLine->setText(confirmText);
             dialoglayout->addSpacing(topSpacing);
             dialoglayout->addWidget(dialogText);
             dialoglayout->addSpacing(normSpacing);
@@ -1818,14 +1823,6 @@ bool T_Deploy::ensureLaunchOptionsContainsArg(const QString &argText) {
     const QString cleanedArg = argText.trimmed();
     if (cleanedArg.isEmpty()) {
         return true;
-    }
-
-    const bool confirmRestart = askDialog(this,
-                                          tr("ARG"),
-                                          tr("继续执行需要暂时关闭 Steam"));
-    if (!confirmRestart) {
-        QLOG_WARN() << "[ARG] 用户取消 Steam 重启流程";
-        return false;
     }
 
     if (!stopSteamProcess()) {
