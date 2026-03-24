@@ -1094,7 +1094,8 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                     tplat->setFont(tpFont);
                     int com=sumContent->addLabel(tplat);
                     sumContent->setValue(com,"//"+line);
-                    sumAsul->setValue(com,line);
+                    int asulCom=sumAsul->addLabel(tplat);
+                    sumAsul->setValue(asulCom,line);
                     Allkey->addWidget(tplat);
                 }else{
                     QLOG_DEBUG()<<"[DEBUGABLE_INFORMATION] Parsing "<<line<<" : char["+QString::number(i)+"]";
