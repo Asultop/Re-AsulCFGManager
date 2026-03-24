@@ -166,7 +166,6 @@ Asul::Asul(QWidget *parent)
     T_Manage *managePage=new T_Manage(this,readPolicy);
 
 
-
     if(deployPage->perfectPath.isEmpty()){
         warnTips(tr("完美平台"),tr("未启动无法自动获取路径"));
     }
