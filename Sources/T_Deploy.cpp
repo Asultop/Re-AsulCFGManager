@@ -691,7 +691,7 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
     QRegularExpression regex("(\\w+)|(\"(?:\\\\.|[^\\\\\"])*\")");
     //QRegularExpression regex2("\"((?:\\\\.|[^\"])*)\"\\s*and\\s*\"((?:\\\\.|[^\"])*)\"");
     QRegularExpression regex2("\"((?:[^\"\\\\]|\\\\.)*?)\"");
-    QRegularExpression regex3("\"([^\"]+)\"\\s*\"([^\"]+)\"");
+    QRegularExpression regex3("\"((?:[^\"\\\\]|\\\\.)*?)\"\\s*\"((?:[^\"\\\\]|\\\\.)*?)\"");
     QRegularExpression regex4("\"((?:[^\"\\\\]|\\\\.)*?)\"\\s*\"((?:[^\"\\\\]|\\\\.)*?)\"\\s*\"((?:[^\"\\\\]|\\\\.)*?)\"\\s*\"((?:[^\"\\\\]|\\\\.)*?)\"");
     pageNumMap[CFGBreifInfo]=fileNames.count();
     QQueue<QString> *ElaPageNodeS=new QQueue<QString>;
@@ -899,6 +899,12 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                         return;
                     }
                 }
+                if (result.size() < 5) {
+                    QLOG_DEBUG()<<"[FUNC] Missing Arguments Count:"<<result.size();
+                    emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :func参数不足");
+                    showable=false;
+                    return;
+                }
                 //func "默认输出方式" "某些调试信息将会被输出" "HorizonMessage_team" 4
                 // "HorizonMessage_team" "输出至队伍聊天"
                 // "HorizonMessage_all" "输出至全局聊天"
@@ -913,6 +919,11 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 QStringList switchContent,switchDetail;
                 for(int j=1;j<switchNums+1;j++){
                     int index=i+j;
+                    if(index>=lines.size()){
+                        emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :func选项数量超出文件行数");
+                        showable=false;
+                        return;
+                    }
                     arguPure+="\n"+lines[index];
                     if(lines[index].startsWith("func")||lines[index].startsWith("text")||lines[index].startsWith("key")){
                         emit generateError("在 "+asulFile+" 中"+QString::number(i)+":func参数过多 当前参数:"+QString::number(switchNums));
@@ -921,14 +932,24 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                     }
                     // switchContent.append(lines[index].split(" ")[0].replace("\"",""));
                     // switchDetail.append(lines[index].split(" ")[1].replace("\"",""));
-                    QRegularExpressionMatch match = regex3.match(lines[index]);
+                    QRegularExpressionMatch match = regex3.match(lines[index].trimmed());
                     if(match.hasMatch()) {
                         QString key = match.captured(1);   // 第一个引号中的内容 (如 HorizonMessage_team)
                         QString value = match.captured(2);  // 第二个引号中的内容 (如 输出至队伍聊天)
                         // QLOG_DEBUG() << "键:" << key << "值:" << value;
                         switchContent.append(key);
                         switchDetail.append(value);
+                    } else {
+                        QLOG_DEBUG()<<"[FUNC] Invalid option line:"<<lines[index];
+                        emit generateError("在 "+asulFile+" 中 "+QString::number(index)+" :func选项格式错误");
+                        showable=false;
+                        return;
                     }
+                }
+                if (switchContent.isEmpty()) {
+                    emit generateError("在 "+asulFile+" 中 "+QString::number(i)+" :func没有可用选项");
+                    showable=false;
+                    return;
                 }
                 ElaScrollPageArea *configArea=new ElaScrollPageArea(DeployWindow);
                 QHBoxLayout * configHLayout=new QHBoxLayout(configArea);
@@ -946,13 +967,17 @@ void T_Deploy::generateScrollPageLayout(QString CFGFileLocation, ElaFlowLayout *
                 configComboBox->addItems(switchDetail);
                 // configComboBox->
                 int defaultCount=0;
+                QString normalizedDefault = defaultSwitch;
+                normalizedDefault.replace("\\\"","\"");
                 for (int i = 0; i < switchContent.count(); ++i) {
-                    if (switchContent[i] == defaultSwitch) {
-                        defaultCount=i;
+                    QString normalizedCandidate = switchContent[i];
+                    normalizedCandidate.replace("\\\"","\"");
+                    if (normalizedCandidate == normalizedDefault) {
+                        defaultCount = i;
                         break;
                     }
                 }
-                configComboBox->setCurrentText(switchDetail[defaultCount]);
+                configComboBox->setCurrentIndex(defaultCount);
                 configComboBox->setMinimumHeight(MiddleHeight);
                 configComboBox->setMaximumWidth(300);
                 configHLayout->addWidget(configComboBox);
