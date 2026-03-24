@@ -15,13 +15,37 @@ QList<SteamUserInfo> F_SteamUserQuery::parseUsersFile(const QString& filePath) {
     QList<SteamUserInfo> userList;
 
     try {
+        if (filePath.trimmed().isEmpty()) {
+            QLOG_WARN() << tr("用户文件路径为空");
+            return userList;
+        }
+
         std::ifstream fileS(filePath.toStdString());
+        if (!fileS.is_open()) {
+            QLOG_WARN() << tr("无法打开用户文件:") << filePath;
+            return userList;
+        }
+
         auto root = tyti::vdf::read(fileS);
-        // auto& childs = root.childs["users"];
-        for(const auto& child : root.childs){
+        const tyti::vdf::object *usersNode = &root;
+        auto usersIt = root.childs.find("users");
+        if (usersIt != root.childs.end() && usersIt->second) {
+            usersNode = usersIt->second.get();
+        }
+
+        for(const auto& child : usersNode->childs){
+            if (!child.second) {
+                continue;
+            }
             SteamUserInfo userInfo;
             userInfo.userId = QString::fromStdString(child.first);
-            userInfo.userShortId = QString::number(ConvertSteamID64ToShortID(userInfo.userId.toLongLong()));
+            bool steamIdOk = false;
+            const qint64 steamId64 = userInfo.userId.toLongLong(&steamIdOk);
+            if (!steamIdOk) {
+                QLOG_WARN() << tr("无效 SteamID:") << userInfo.userId;
+                continue;
+            }
+            userInfo.userShortId = QString::number(ConvertSteamID64ToShortID(steamId64));
             userInfo.accountName = QString::fromStdString(child.second->attribs["AccountName"]);
             userInfo.personaName = QString::fromStdString(child.second->attribs["PersonaName"]);
             userInfo.wantsOfflineMode = (child.second->attribs["WantsOfflineMode"] == "1");

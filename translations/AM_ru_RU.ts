@@ -61,92 +61,92 @@
         <translation>Разрешите нам получить информацию об оборудовании</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="171"/>
+        <location filename="../AsulCFGManager.cpp" line="170"/>
         <source>完美平台</source>
         <translation>PerfectAreaPlatform</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="171"/>
+        <location filename="../AsulCFGManager.cpp" line="170"/>
         <source>未启动无法自动获取路径</source>
         <translation>Не запущено - невозможно автоматически получить путь</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="216"/>
+        <location filename="../AsulCFGManager.cpp" line="215"/>
         <source>主菜单</source>
         <translation>Главная</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="217"/>
+        <location filename="../AsulCFGManager.cpp" line="216"/>
         <source>安装 | 管理配置</source>
         <translation>Установка | Управление конфигурацией</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="218"/>
+        <location filename="../AsulCFGManager.cpp" line="217"/>
         <source>管理 | 开关</source>
         <translation>Управление | Переключатель</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="219"/>
+        <location filename="../AsulCFGManager.cpp" line="218"/>
         <source>用户</source>
         <translation>Пользователи</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="222"/>
+        <location filename="../AsulCFGManager.cpp" line="221"/>
         <source>接入</source>
         <translation>Доступ</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="223"/>
+        <location filename="../AsulCFGManager.cpp" line="222"/>
         <source>关于</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="224"/>
+        <location filename="../AsulCFGManager.cpp" line="223"/>
         <source>设置</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="244"/>
+        <location filename="../AsulCFGManager.cpp" line="243"/>
         <source>错误</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="250"/>
+        <location filename="../AsulCFGManager.cpp" line="249"/>
         <source>CFG 文件目录未配置</source>
         <translation>Директория CFG файлов не настроена</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="255"/>
+        <location filename="../AsulCFGManager.cpp" line="254"/>
         <source>返回</source>
         <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="256"/>
+        <location filename="../AsulCFGManager.cpp" line="255"/>
         <source>前往配置</source>
         <translation>Перейти к конфигурации</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="257"/>
+        <location filename="../AsulCFGManager.cpp" line="256"/>
         <source>确定</source>
         <translation>ОК</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="346"/>
+        <location filename="../AsulCFGManager.cpp" line="345"/>
         <source>成功</source>
         <translation>Успешно</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="346"/>
+        <location filename="../AsulCFGManager.cpp" line="345"/>
         <source>转换器启动中</source>
         <translation>Запуск преобразователя</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="359"/>
+        <location filename="../AsulCFGManager.cpp" line="358"/>
         <source>关闭</source>
         <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../AsulCFGManager.cpp" line="359"/>
+        <location filename="../AsulCFGManager.cpp" line="358"/>
         <source>确定要关闭此程序?</source>
         <translation>Вы уверены, что хотите закрыть эту программу?</translation>
     </message>
@@ -167,22 +167,37 @@
 <context>
     <name>F_SteamUserQuery</name>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="36"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="19"/>
+        <source>用户文件路径为空</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="25"/>
+        <source>无法打开用户文件:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="45"/>
+        <source>无效 SteamID:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="60"/>
         <source>成功解析</source>
         <translation>Успешно обработано</translation>
     </message>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="36"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="60"/>
         <source>个用户</source>
         <translation>Пользователь</translation>
     </message>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="39"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="63"/>
         <source>VDF解析错误:</source>
         <translation>Ошибка обработки VDF файла:</translation>
     </message>
     <message>
-        <location filename="../Sources/F_SteamUserQuery.cpp" line="68"/>
+        <location filename="../Sources/F_SteamUserQuery.cpp" line="92"/>
         <source>错误：无效的SteamID64（小于基数）</source>
         <translation>Ошибка: неверный SteamID64 (меньше базового числа)</translation>
     </message>
@@ -517,7 +532,7 @@ There are inherent dangers in the use of any software, and you are solely respon
 <context>
     <name>T_Deploy</name>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="39"/>
+        <location filename="../Sources/T_Deploy.cpp" line="40"/>
         <source>安装</source>
         <translation>Установка</translation>
     </message>
@@ -527,36 +542,36 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">Выберите установочный пакет соответствующего формата\nМы проанализируем данные и автоматически установим их в вашу директорию CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="60"/>
+        <location filename="../Sources/T_Deploy.cpp" line="61"/>
         <source>寻找文件目录</source>
         <translation>Поиск директории файлов</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="63"/>
+        <location filename="../Sources/T_Deploy.cpp" line="64"/>
         <source>获取目录</source>
         <translation>Получить директорию</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="70"/>
+        <location filename="../Sources/T_Deploy.cpp" line="71"/>
         <source>构建布局</source>
         <translation>Создание макета</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="73"/>
         <location filename="../Sources/T_Deploy.cpp" line="74"/>
-        <location filename="../Sources/T_Deploy.cpp" line="124"/>
-        <location filename="../Sources/T_Deploy.cpp" line="137"/>
-        <location filename="../Sources/T_Deploy.cpp" line="139"/>
+        <location filename="../Sources/T_Deploy.cpp" line="75"/>
+        <location filename="../Sources/T_Deploy.cpp" line="125"/>
+        <location filename="../Sources/T_Deploy.cpp" line="138"/>
+        <location filename="../Sources/T_Deploy.cpp" line="140"/>
         <source>扫描</source>
         <translation>Сканирование</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="75"/>
+        <location filename="../Sources/T_Deploy.cpp" line="76"/>
         <source>扫描中</source>
         <translation>Сканирование...</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="79"/>
+        <location filename="../Sources/T_Deploy.cpp" line="80"/>
         <source>移除全部</source>
         <translation>Удалить все</translation>
     </message>
@@ -565,63 +580,63 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">Выберите файл:</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="39"/>
+        <location filename="../Sources/T_Deploy.cpp" line="40"/>
         <source>选择符合格式的安装包</source>
         <translation>Выберите установочный пакет соответствующего формата</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="39"/>
+        <location filename="../Sources/T_Deploy.cpp" line="40"/>
         <source>我们会为您解析数据并自动安装到您的CFG目录下</source>
         <translation>Мы проанализируем данные и автоматически установим их в вашу директорию CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="39"/>
+        <location filename="../Sources/T_Deploy.cpp" line="40"/>
         <source>[鼠标悬浮] : 展开界面点击管理或部署</source>
         <translation>[Наведение мыши]: развернуть интерфейс и нажать управление или развертывание</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="39"/>
+        <location filename="../Sources/T_Deploy.cpp" line="40"/>
         <source>[鼠标单击] : 提示删除</source>
         <translation>[Щелчок мыши]: запрос на удаление</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="83"/>
+        <location filename="../Sources/T_Deploy.cpp" line="84"/>
         <source>选择</source>
         <translation>Выбрать</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="96"/>
+        <location filename="../Sources/T_Deploy.cpp" line="97"/>
         <source>请选择文件</source>
         <translation>Пожалуйста, выберите файл</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="120"/>
+        <location filename="../Sources/T_Deploy.cpp" line="121"/>
         <source>扫描中..</source>
         <translation>Сканирование..</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="134"/>
+        <location filename="../Sources/T_Deploy.cpp" line="135"/>
         <source>存在配置:[%1]</source>
         <translation>Существует конфигурация:[%1]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="139"/>
+        <location filename="../Sources/T_Deploy.cpp" line="140"/>
         <source>未找到存在的配置</source>
         <translation>Не найдено существующей конфигурации</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="157"/>
+        <location filename="../Sources/T_Deploy.cpp" line="158"/>
         <source>打开 CFG包 文件</source>
         <translation>Открыть CFG-файл</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="160"/>
+        <location filename="../Sources/T_Deploy.cpp" line="161"/>
         <source>CFG包 文件 (*.zip *.tar *.gz *.bz2 *.rar *.7z)</source>
         <translation>CFG-файл (*.zip *.tar *.gz *.bz2 *.rar *.7z)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="219"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1300"/>
+        <location filename="../Sources/T_Deploy.cpp" line="220"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1310"/>
         <source>文件</source>
         <translation>Файл</translation>
     </message>
@@ -630,259 +645,260 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">Отменить выбор</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="182"/>
+        <location filename="../Sources/T_Deploy.cpp" line="183"/>
         <source>功能</source>
         <translation>Функция</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="219"/>
+        <location filename="../Sources/T_Deploy.cpp" line="220"/>
         <source>包过大 %1MB (超过 500 MB)</source>
         <translation>Пакет слишком большой %1МБ (более 500 МБ)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="237"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1273"/>
+        <location filename="../Sources/T_Deploy.cpp" line="238"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1283"/>
         <source>错误</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="248"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1146"/>
+        <location filename="../Sources/T_Deploy.cpp" line="249"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1147"/>
         <source>取消</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="249"/>
+        <location filename="../Sources/T_Deploy.cpp" line="250"/>
         <source>了解格式</source>
         <translation>Понять формат</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="250"/>
+        <location filename="../Sources/T_Deploy.cpp" line="251"/>
         <source>重选</source>
         <translation>Выбрать заново</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="287"/>
+        <location filename="../Sources/T_Deploy.cpp" line="288"/>
         <source>没有相关文件夹</source>
         <translation>Нет такой директории</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="299"/>
+        <location filename="../Sources/T_Deploy.cpp" line="300"/>
         <source>文件包为空</source>
         <translation>Пакет файлов пуст</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="302"/>
+        <location filename="../Sources/T_Deploy.cpp" line="303"/>
         <source>文件包格式错误</source>
         <translation>Ошибка формата пакета</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="412"/>
+        <location filename="../Sources/T_Deploy.cpp" line="413"/>
         <source>寻找本地CFG管理文件</source>
         <translation>Поиск локального файла управления CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="464"/>
+        <location filename="../Sources/T_Deploy.cpp" line="465"/>
         <source>Asuls 文件:</source>
         <translation>Файл Asuls:</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="491"/>
+        <location filename="../Sources/T_Deploy.cpp" line="492"/>
         <source>Asuls 文件(config.asuls): [INI]错误</source>
         <translation>Файл Asuls(config.asuls): Ошибка [INI]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="508"/>
+        <location filename="../Sources/T_Deploy.cpp" line="509"/>
         <source>Asuls 文件(config.asuls): [EXE]错误</source>
         <translation>Файл Asuls(config.asuls): Ошибка [EXE]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="522"/>
+        <location filename="../Sources/T_Deploy.cpp" line="523"/>
         <source>Asuls 文件(config.asuls): [DIR]错误</source>
         <translation>Файл Asuls(config.asuls): Ошибка [DIR]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="535"/>
+        <location filename="../Sources/T_Deploy.cpp" line="536"/>
         <source>Asuls 文件(config.asuls): [HLP]错误</source>
         <translation>Файл Asuls(config.asuls): Ошибка [HLP]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="549"/>
+        <location filename="../Sources/T_Deploy.cpp" line="550"/>
         <source>Asuls 文件(config.asuls): [PNG]错误</source>
         <translation>Файл Asuls(config.asuls): Ошибка [PNG]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="561"/>
+        <location filename="../Sources/T_Deploy.cpp" line="562"/>
         <source>Asuls 文件(config.asuls): [UPD]错误</source>
         <translation>Файл Asuls(config.asuls): Ошибка [UPD]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="571"/>
+        <location filename="../Sources/T_Deploy.cpp" line="572"/>
         <source>Asuls 文件(config.asuls): [ARG]错误</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="614"/>
+        <location filename="../Sources/T_Deploy.cpp" line="615"/>
         <source>Asuls 文件(config.asuls): 未找到%1 %2</source>
         <translation>Файл Asuls(config.asuls): Не найдено %1 %2</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="632"/>
+        <location filename="../Sources/T_Deploy.cpp" line="633"/>
         <source>关闭</source>
         <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="632"/>
+        <location filename="../Sources/T_Deploy.cpp" line="633"/>
         <source>是否退出配置</source>
         <translation>Выйти из конфигурации?</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="644"/>
+        <location filename="../Sources/T_Deploy.cpp" line="645"/>
         <source>部署 CFG</source>
         <translation>Развертывание CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="788"/>
+        <location filename="../Sources/T_Deploy.cpp" line="789"/>
         <source> 中 </source>
         <translation> в </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="788"/>
+        <location filename="../Sources/T_Deploy.cpp" line="789"/>
         <source> [key] 无法找到完整参数</source>
         <translation> [key] Не удалось найти полные параметры</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1260"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1824"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1263"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1266"/>
         <source>ARG</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1260"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1263"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1267"/>
         <source>启动参数写入失败，请检查 Steam 用户配置路径</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1469"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1566"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1340"/>
+        <source> 这次配置将重启 Steam</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../Sources/T_Deploy.cpp" line="1484"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1581"/>
         <source>注意</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1469"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1566"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1484"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1581"/>
         <source>这会重置 </source>
         <translation>Это сбросит </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1469"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1566"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1484"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1581"/>
         <source>(**最近登陆**) 的所有按键绑定设置! </source>
         <translation>все настройки привязки клавиш (**последний вход**)! </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1489"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1584"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1504"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1599"/>
         <source>无法打开文件: </source>
         <translation>Не удалось открыть файл: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1500"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1595"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1515"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1610"/>
         <source>解析失败: </source>
         <translation>Ошибка обработки: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1505"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1600"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1520"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1615"/>
         <source>[内部错误] VDF 格式错误!</source>
         <translation>[Внутренняя ошибка] Ошибка формата VDF!</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1512"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1607"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1527"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1622"/>
         <source>[内部错误] convar 节点丢失</source>
         <translation>[Внутренняя ошибка] Утрата узла convar</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1528"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1623"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1543"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1638"/>
         <source>无法打开文件进行写入: </source>
         <translation>Не удалось открыть файл для записи: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1538"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1633"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1553"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1648"/>
         <source>操作成功</source>
         <translation>Операция выполнена успешно</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1542"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1637"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1557"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1652"/>
         <source>VDF 操作错误: </source>
         <translation>Ошибка операции VDF: </translation>
-    </message>
-    <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1825"/>
-        <source>继续执行需要暂时关闭 Steam</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>队列中</source>
         <translation type="vanished">В очереди</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="665"/>
+        <location filename="../Sources/T_Deploy.cpp" line="666"/>
         <source>管理</source>
         <translation>Управление</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="666"/>
+        <location filename="../Sources/T_Deploy.cpp" line="667"/>
         <source>已安装</source>
         <translation>Установлено</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="668"/>
+        <location filename="../Sources/T_Deploy.cpp" line="669"/>
         <source>删除</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="668"/>
+        <location filename="../Sources/T_Deploy.cpp" line="669"/>
         <source>是否要删除此CFG,这会永久删除 (真的很久!)</source>
         <translation>Вы хотите удалить этот CFG? Это приведет к его постоянному удалению (навсегда!)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="674"/>
+        <location filename="../Sources/T_Deploy.cpp" line="675"/>
         <source>版本:</source>
         <translation>Версия:</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="718"/>
+        <location filename="../Sources/T_Deploy.cpp" line="719"/>
         <source>更新</source>
         <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="718"/>
+        <location filename="../Sources/T_Deploy.cpp" line="719"/>
         <source>检测到 CFG 目录下有可覆盖的更新 是否启用?</source>
         <translation>Обнаружены обновления в директории CFG, которые можно перезаписать. Включить?</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="724"/>
+        <location filename="../Sources/T_Deploy.cpp" line="725"/>
         <source> [升级模式]</source>
         <translation> [Режим обновления]</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="736"/>
+        <location filename="../Sources/T_Deploy.cpp" line="737"/>
         <source> 项目</source>
         <translation> Программа</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="736"/>
+        <location filename="../Sources/T_Deploy.cpp" line="737"/>
         <source>解析完成 </source>
         <translation>Обработка завершена </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="788"/>
+        <location filename="../Sources/T_Deploy.cpp" line="789"/>
         <source>在 </source>
         <translation>в </translation>
     </message>
@@ -891,39 +907,39 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">[key] Незавершено</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="805"/>
+        <location filename="../Sources/T_Deploy.cpp" line="806"/>
         <source>(根据作者定义此项无法修改)</source>
         <translation>(Обязательно)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1203"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1204"/>
         <source>// ====== 生成的文件 =======</source>
         <translation>// ====== Сгенерированный файл =======</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1204"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1205"/>
         <source>//=这个 %1 文件由 Asul-CFGManager(AM) 根据配置自动生成 </source>
         <translation>//=Этот файл %1 автоматически создан Asul CFGManager (AM) на основе конфигурации </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1205"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1206"/>
         <source>
 //==这个 配置文件 从哪儿来的?</source>
         <translation>
 //==Откуда этот конфигурационный файл? </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1209"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1210"/>
         <source>//==CFG 详细 结束</source>
         <translation>//==Конец подробностей CFG</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1215"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1216"/>
         <source>//==参数结束</source>
         <translation>//==Конец параметров</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1216"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1217"/>
         <source>//AM 是由 Alivn开发的部署 CS2 CFG 的程序,旨在为CFG制作者提供更方便的分发服务 以及 使用者提供方便的配置服务</source>
         <translation>//AM - это программа, разработанная Alivn для развертывания CS2 CFG, предназначенная для предоставления более удобных услуг распространения для создателей CFG и удобных услуг конфигурации для пользователей</translation>
     </message>
@@ -933,40 +949,40 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">Если на клавиатуре нет нужных клавиш или после подтверждения они не соответствуют требуемым\nпожалуйста, введите их вручную во втором поле</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="744"/>
+        <location filename="../Sources/T_Deploy.cpp" line="745"/>
         <source> 配置</source>
         <translation> Конфигурация</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="754"/>
+        <location filename="../Sources/T_Deploy.cpp" line="755"/>
         <source>Asul 文件(</source>
         <translation>Файл Asul(</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1085"/>
         <location filename="../Sources/T_Deploy.cpp" line="1086"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1087"/>
         <source>预览 %1 文件</source>
         <translation>Предпросмотр файла %1</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="661"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1117"/>
-        <location filename="../Sources/T_Deploy.cpp" line="1321"/>
+        <location filename="../Sources/T_Deploy.cpp" line="662"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1118"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1331"/>
         <source>部署</source>
         <translation>Развернуть</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="662"/>
+        <location filename="../Sources/T_Deploy.cpp" line="663"/>
         <source> 队列中 - 等待点击部署</source>
         <translation> В очереди - ожидание развертывания</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1145"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1146"/>
         <source>返回</source>
         <translation>Назад</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1147"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1148"/>
         <source>确认</source>
         <translation>Подтвердить</translation>
     </message>
@@ -987,17 +1003,17 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">\n//==Откуда этот конфигурационный файл? \n</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1206"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1207"/>
         <source>//CFG 制作者: </source>
         <translation>//Автор CFG: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1207"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1208"/>
         <source>//CFG 名称: </source>
         <translation>//Имя CFG: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1208"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1209"/>
         <source>//CFG 版本: </source>
         <translation>//Версия CFG: </translation>
     </message>
@@ -1018,57 +1034,57 @@ There are inherent dangers in the use of any software, and you are solely respon
         <translation type="vanished">//AM - это программа, разработанная Alivn для развертывания CS2 CFG, предназначенная для предоставления более удобных услуг распространения для создателей CFG и удобных услуг конфигурации для пользователей\n</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1217"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1218"/>
         <source>//开发者:Github(https://github.com/AsulTop),网站(http://www.asul.top)</source>
         <translation>//Разработчик:Github(https://github.com/AsulTop),Веб-сайт(http://www.asul.top)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1218"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1219"/>
         <source>//配置时间: </source>
         <translation>//Время конфигурации: </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1273"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1283"/>
         <source>AUTOINSTALL.bat 创建失败</source>
         <translation>Не удалось создать AUTOINSTALL.bat</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1288"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1298"/>
         <source>自动</source>
         <translation>Авто</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1288"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1298"/>
         <source>运行失败，请查看帮助文档</source>
         <translation>Ошибка выполнения, пожалуйста, ознакомьтесь с документацией</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1300"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1310"/>
         <source>没有存在的 AutoExec.cfg 文件 是否创建?</source>
         <translation>Файл AutoExec.cfg не существует, создать?</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1300"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1310"/>
         <source>(不创建将导致管理失效!)</source>
         <translation>(Без создания управление не будет работать!)</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1316"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1326"/>
         <source>完成</source>
         <translation>Завершено</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1314"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1324"/>
         <source>配置中还有 </source>
         <translation>В конфигурации еще осталось </translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1314"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1324"/>
         <source> 个</source>
         <translation> Осталось</translation>
     </message>
     <message>
-        <location filename="../Sources/T_Deploy.cpp" line="1327"/>
+        <location filename="../Sources/T_Deploy.cpp" line="1337"/>
         <source>确认配置?</source>
         <translation>Подтвердить конфигурацию?</translation>
     </message>
